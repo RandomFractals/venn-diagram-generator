@@ -11,7 +11,7 @@ https://venn-diagrams.herokuapp.com/
 
 # Synopsis
 
-The idea for this meme generator project came from sourcing a number of ineteresting posts from the data science community: new data scientist position posted, articles shared on medium, kdnuggets or elsewhere, and heavy use and bause of Venn Diagrams pics for that purpose.
+The idea for this meme generator project came from sourcing a number of ineteresting posts from the data science community: new data scientist position posted, articles shared on medium, kdnuggets or elsewhere, and heavy use and abuse of Venn Diagrams pics for that purpose.
 
 As a data viz specialist and practitioner, I've had it! A few other creative types decided if we can't beat them, we should join them, and create one stop shop app for you to gen those Venn Diagrams about what you fancy, and what unicorn intersection you are trying to find FTW.
 
