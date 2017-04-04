@@ -19,14 +19,20 @@ Thus, the Venn Diagram meme generator idea was born:
 
 https://twitter.com/dataandme/status/848850426095120384
 
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsInTheWild.png)
+
 Ideally, we'd like to create an app for you to gen Venn Diagrams like this:
 
 https://twitter.com/BourseetTrading/status/848192200789942272
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/epicDataSciVennDiagram.jpg)
 
 or how to make your pancakes:
 
 https://twitter.com/MrBenWard/status/836489614676353024
 
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/pancakesVennDiagram.jpg)
 
 
 
