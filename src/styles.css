@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+/* data vis container styles */
+.container {
+ padding: 0px;
+ margin: 0px;
+ width: 100%;
+}
+
+.data, .graph {
+	background-color: #eee;
+	border: solid 1px #AACFE4;
+	border-radius: 0px;
+	box-shadow: 0px 0px 10px #ccc;	
+	margin: 0px;	
+  /*overflow: hidden;*/
+}
+
+.data {
+	background-color: #fff;	
+	/*overflow-y: scroll;*/
+}
+
+/* menu link styles */
+a {
+	color: #06f;
+  text-decoration: none;
+	font-size: 9pt;
+}
+
+/* data list item styles */
+.data-list {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	list-style: none;	
+	height: 100%;
+}
+
+.data-list li {
+ 	border: 0px;
+	border-collapse: collapse;
+	background-color: #fff;
+	margin: 0px;
+	padding: 5px;
+}
+
+.data-list > li[class=selected] {
+	background-color: #e0e0e0;
+}
+
+.list-item {
+	border: 0px;	
+ 	border-top: solid 1px #ccc;
+	background-color: #fff;
+	padding: 5px;	
+	width: 100%;
+	display: inline-block;
+}
+
+.list-item-footer {
+	padding: 0px;	
+}
+
+.list-item-text {
+ 	border: 0px;
+	background-color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+.list-item-link {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* app text elements + link styles */
+.footer, .label {
+	font-size: .8em;	
+	color: #333;
+	margin: 0px;
+}
+
+.link {
+	font-size: 0.9em;
+	color: #06f;
+}
+
+/* footer styles */
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 24px;
+	float: right;
+	right: 10px;
+}
