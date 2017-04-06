@@ -9,8 +9,8 @@ export class Topic {
    * for a topical diagram display.
    * 
    * @param name Topic name.
-   * @param strokeColor Topic stroke color.
-   * @param fillColor Topic fill color.
+   * @param strokeColor Topic shape stroke color.
+   * @param fillColor Topic shape fill color.
    */
   constructor(public name:string, public strokeColor:string, public fillColor:string) {}
 }
