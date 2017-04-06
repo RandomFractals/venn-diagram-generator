@@ -4,12 +4,18 @@
 	</div>
 	<!-- app content -->
 	<div id="content" class="container">	
-		<div id="viewContainer" class="container">
+		<div id="view-container" class="container">
       <h2>{{diagram.name}}</h2>
-			<div id="listView" class="data container">
-        <ul>
+			<div id="list-view" class="data container">
+        <ul class="data-list">
           <li *ngFor="let topic of diagram.topics">
             {{ topic.name }}
+            <div class="topic-editor">
+              <span class="label">stroke:</span>
+              <div class="color" style="background-color: {{topic.strokeColor}}"></div>
+              <span class="label">fill:</span>
+              <div class="color"></div>
+            </div>
           </li>
         </ul>        
 			</div>

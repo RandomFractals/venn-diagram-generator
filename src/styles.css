@@ -27,55 +27,6 @@ a {
 	font-size: 9pt;
 }
 
-/* data list item styles */
-.data-list {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-	list-style: none;	
-	height: 100%;
-}
-
-.data-list li {
- 	border: 0px;
-	border-collapse: collapse;
-	background-color: #fff;
-	margin: 0px;
-	padding: 5px;
-}
-
-.data-list > li[class=selected] {
-	background-color: #e0e0e0;
-}
-
-.list-item {
-	border: 0px;	
- 	border-top: solid 1px #ccc;
-	background-color: #fff;
-	padding: 5px;	
-	width: 100%;
-	display: inline-block;
-}
-
-.list-item-footer {
-	padding: 0px;	
-}
-
-.list-item-text {
- 	border: 0px;
-	background-color: #fff;
-	font-size: 0.9em;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-.list-item-link {
-	padding: 0px;
-	margin: 0px;
-}
-
-
 /* app text elements + link styles */
 .footer, .label {
 	font-size: .8em;	

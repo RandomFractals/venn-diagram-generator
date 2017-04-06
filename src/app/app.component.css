@@ -5,7 +5,70 @@ h1 {
   font-weight: normal;
 }
 
+/* diagram title style */
 h2 {
   font-size: .9em;
   font-weight: normal;  
+}
+
+
+/* data list item styles */
+.data-list {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	list-style: none;	
+	height: 100%;
+}
+
+.data-list li {
+ 	border: 1px solid #ccc;
+	border-collapse: collapse;
+	background-color: #fff;
+	margin: 0px;
+	padding: 5px;
+}
+
+.data-list > li[class=selected] {
+	background-color: #e0e0e0;
+}
+
+.list-item {
+	border: 0px;	
+ 	border-top: solid 1px #ccc;
+	background-color: #fff;
+	padding: 5px;	
+	width: 100%;
+	display: inline-block;
+}
+
+.list-item-footer {
+	padding: 0px;	
+}
+
+.list-item-text {
+ 	border: 0px;
+	background-color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* topic editor container styles */
+.topic-editor {
+  padding: 5px;
+}
+
+.color {
+  border: 1px solid black;
+  height: 16px;
+  width: 16px;
+  display: inline-block;  
+}
+
+.color:hover {
+  cursor: pointer;
+  border: 1px solid orangered;
 }
