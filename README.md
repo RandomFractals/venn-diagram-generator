@@ -38,7 +38,13 @@ Best bg story on how we ended up here is on kdnuggets:
 http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
 
-# VennDiagramGenerator App Build/Run Instructions
+# App Dev UI Status
+
+day 1: Topic list UI in dev. Latest:
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList2.png)
+
+# App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
