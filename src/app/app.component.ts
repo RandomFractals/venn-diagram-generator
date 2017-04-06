@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 // import model classes
-import {Diagram} from './diagram';
-import {Topic} from './topic';
+import {Diagram} from './models/diagram';
+import {Topic} from './models/topic';
 
 /**
  * Main Venn Diagram generator app component.
