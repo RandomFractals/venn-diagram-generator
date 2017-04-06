@@ -19,9 +19,9 @@
           </li>
         </ul>
         <input #newTopic placeholder="Enter New Topic"
-          (keyup.enter)="addTopic(newTopic.value)"
-          (blur)="addTopic(newTopic.value); newTopic.value='' ">
-        <button (click)="addTopic(newTopic.value)">Add</button>
+          (keyup.enter)="diagram.addTopic(newTopic.value)"
+          (blur)="diagram.addTopic(newTopic.value); newTopic.value='' ">
+        <button (click)="diagram.addTopic(newTopic.value)">Add</button>
 			</div>
 		</div>
 		<div id="footer" class="footer left">
