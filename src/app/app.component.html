@@ -5,10 +5,13 @@
 	<!-- app content -->
 	<div id="content" class="container">	
 		<div id="viewContainer" class="container">
+      <h2>{{diagram.name}}</h2>
 			<div id="listView" class="data container">
-        <!--
-        <router-outlet></router-outlet>          
-        -->
+        <ul>
+          <li *ngFor="let topic of diagram.topics">
+            {{ topic.name }}
+          </li>
+        </ul>        
 			</div>
 		</div>
 		<div id="footer" class="footer left">
