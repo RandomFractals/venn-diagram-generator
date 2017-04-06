@@ -40,13 +40,20 @@ http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
 # App Dev Status
 
-day 1: Topic list UI prototype:
+## day 1: Topic list UI prototype:
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
 Also the boilerplate angular4 jasmine tests are still passing. It's a good sign. I'll double down on that tomorrow for the list comp. One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma.png)
+
+## day 2 dev plan:
+
+- add proper material UI CSS framework for buttons, toggles, topic list sidebar etc.
+- add diagram name edit functionality
+- add delete topic and reorder topics feature to the topic list
+- stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions
 
