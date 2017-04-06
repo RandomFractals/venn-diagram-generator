@@ -40,9 +40,9 @@ http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
 # App Dev UI Status
 
-day 1: Topic list UI in dev. Latest:
+day 1: Topic list UI prototype:
 
-![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList2.png)
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
 # App Build/Run Instructions
 

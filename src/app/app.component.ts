@@ -41,19 +41,24 @@ export class AppComponent {
   constructor() {
 
     // add 3 starter topics for now
-    this.diagram.topics.push(
-      new Topic('Topic 1', this.getRandomColor(), this.getRandomColor() ) // stroke, fill
-    );
-
-    this.diagram.topics.push(
-      new Topic('Topic 2', this.getRandomColor(), this.getRandomColor() )
-    );
-
-    this.diagram.topics.push(
-      new Topic('Topic 3', this.getRandomColor(), this.getRandomColor() )
-    );
+    this.addTopic('Topic 1');
+    this.addTopic('Topic 2');
+    this.addTopic('Topic 3');
   }
 
+
+  /**
+   * Adds new topic to the diagram.
+   * 
+   * @param topicName Topic name.
+   */
+  addTopic(topicName:string) {
+    if (topicName) {
+      this.diagram.topics.push(
+        new Topic(topicName, this.getRandomColor(), this.getRandomColor() ) // stroke, fill
+      );
+    }
+  }
 
   /**
    * Gets a random color from configured color palette

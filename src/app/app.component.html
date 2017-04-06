@@ -17,7 +17,11 @@
               <div class="color" [style.background-color]="topic.fillColor"></div>
             </div>
           </li>
-        </ul>        
+        </ul>
+        <input #newTopic placeholder="Enter New Topic"
+          (keyup.enter)="addTopic(newTopic.value)"
+          (blur)="addTopic(newTopic.value); newTopic.value='' ">
+        <button (click)="addTopic(newTopic.value)">Add</button>
 			</div>
 		</div>
 		<div id="footer" class="footer left">
