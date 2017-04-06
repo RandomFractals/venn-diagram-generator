@@ -38,7 +38,7 @@ Best bg story on how we ended up here is on kdnuggets:
 http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
 
-# App Dev UI Status
+# App Dev Status
 
 day 1: Topic list UI prototype:
 
@@ -47,6 +47,10 @@ day 1: Topic list UI prototype:
 # App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+Also the boilerplate angular4 jasmine tests are still passing. It's a good sign. I'll double down on that tomorrow for the list comp. One must have tests! for good karma and all :)
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma.png)
 
 ## Development server
 
