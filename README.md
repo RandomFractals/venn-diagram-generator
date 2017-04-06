@@ -44,13 +44,13 @@ day 1: Topic list UI prototype:
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
-# App Build/Run Instructions
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
-
 Also the boilerplate angular4 jasmine tests are still passing. It's a good sign. I'll double down on that tomorrow for the list comp. One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma.png)
+
+# App Build/Run Instructions
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
 
