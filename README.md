@@ -48,7 +48,7 @@ http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
 Also, the boilerplate angular4 jasmine tests are still passing. It's a good sign. 
-I'll double down on that tomorrow for the list comp. tomorrow.
+I'll double down on that for the list comp. tomorrow.
 One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma2.png)
