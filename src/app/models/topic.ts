@@ -1,10 +1,10 @@
 /**
- * Defines a generic topic data model type for topical maps and diagrams.
+ * Defines a generic topic view model type for topical maps and diagrams.
  */
 export class Topic {
 
   /**
-   * Creates new topic model data instance with name, 
+   * Creates new topic view model instance with name, 
    * stroke and fill color properties
    * for a topical diagram display.
    * 

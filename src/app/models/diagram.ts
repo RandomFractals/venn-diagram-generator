@@ -1,7 +1,7 @@
 import {Topic} from './topic';
 
 /**
- * Defines a generic diagram data model type with a diagram name and a list of topics.
+ * Defines a generic diagram view model type with a diagram name and a list of topics.
  * 
  * Note: this can be used as a base class for Venn diagram or other topical graphs.
  */
@@ -26,7 +26,7 @@ export class Diagram {
   ];
 
   /**
-   * Creates new diagram model instance.
+   * Creates new diagram view model instance.
    * 
    * @param name Diagram name.
    */
