@@ -9,12 +9,12 @@
 			<div id="list-view" class="data container">
         <ul class="data-list">
           <li *ngFor="let topic of diagram.topics; let i=index;"
-            [attr.data-index]="i">
+            [attr.data-index]="i" (click)="editTopic(i)">
             {{ topic.name }}
-            <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
-            <button (click)="diagram.moveTopicDown(i)">&darr;</button>
-            <button (click)="diagram.removeTopic(i)">&times;</button>
-            <div class="topic-editor">
+            <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
+              <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
+              <button (click)="diagram.moveTopicDown(i)">&darr;</button>
+              <button (click)="diagram.removeTopic(i)">&times;</button>              
               <span class="label">stroke:</span>
               <div class="color" [style.background-color]="topic.strokeColor"></div>
               <span class="label">fill:</span>

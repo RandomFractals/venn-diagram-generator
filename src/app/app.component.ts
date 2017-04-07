@@ -20,11 +20,31 @@ export class AppComponent {
   // Venn diagram data model instance
   diagram:Diagram = new Diagram('My Venn Diagram');
 
+  // selected topic for editing
+  selectedTopicIndex:number = 0;
+
   /**
    * Creates new Venn diagram designer app instance.
    */
   constructor() {
 
+  }
+
+
+  /**
+   * Enables topic editing UI.
+   * 
+   * @param topicIndex Selected topic index.
+   */
+  editTopic(topicIndex:number)  {
+
+    // hide last selected topic editor
+    document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'hidden';
+    
+    // show new topic editor
+    this.selectedTopicIndex = topicIndex;
+    console.log('edit topic:', this.selectedTopicIndex);
+    document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'show';
   }
 
 }

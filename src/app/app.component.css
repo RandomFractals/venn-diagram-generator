@@ -27,6 +27,7 @@ h2 {
 	background-color: #fff;
 	margin: 0px;
 	padding: 5px;
+  cursor: pointer;	
 }
 
 .data-list > li[class=selected] {
@@ -59,6 +60,10 @@ h2 {
 /* topic editor container styles */
 .topic-editor {
   padding: 5px;
+}
+
+.hidden {
+	display: none;
 }
 
 .color {
