@@ -78,7 +78,7 @@ export class Diagram {
    * @param topicIndex Target topic index.
    */
   moveTopicUp(topicIndex:number) {
-    if (topicIndex > 0) {
+    if (topicIndex > 0 && topicIndex < this.topics.length) {
       this.topics[topicIndex-1] = this.topics.splice(topicIndex, 1, this.topics[topicIndex-1])[0];
     }
   }
@@ -90,7 +90,7 @@ export class Diagram {
    * @param topicIndex Target topic index.
    */
   moveTopicDown(topicIndex:number) {
-    if (topicIndex < this.topics.length-1) {
+    if (topicIndex >= 0 && topicIndex < this.topics.length-1) {
       this.topics[topicIndex+1] = this.topics.splice(topicIndex, 1, this.topics[topicIndex+1])[0];
     }
   }
