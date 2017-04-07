@@ -70,7 +70,30 @@ export class Diagram {
     }
     return removedTopic;
   }
-  
+
+
+  /**
+   * Moves a diagram topic up for topic list reordering.
+   * 
+   * @param topicIndex Target topic index.
+   */
+  moveTopicUp(topicIndex:number) {
+    if (topicIndex > 0) {
+      this.topics[topicIndex-1] = this.topics.splice(topicIndex, 1, this.topics[topicIndex-1])[0];
+    }
+  }
+
+
+  /**
+   * Moves a diagram topic down for topic list reordering.
+   * 
+   * @param topicIndex Target topic index.
+   */
+  moveTopicDown(topicIndex:number) {
+    if (topicIndex < this.topics.length-1) {
+      this.topics[topicIndex+1] = this.topics.splice(topicIndex, 1, this.topics[topicIndex+1])[0];
+    }
+  }
 
   /**
    * Gets a random color from configured color palette
