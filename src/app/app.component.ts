@@ -32,16 +32,24 @@ export class AppComponent {
 
 
   /**
+   * Adds new topic to the diagram topic list.
+   * 
+   * @param topicName New topic name.
+   */
+  addTopic(topicName:string) {
+    this.diagram.addTopic(topicName);
+  }
+
+
+  /**
    * Enables topic editing UI.
    * 
    * @param topicIndex Selected topic index.
    */
   editTopic(topicIndex:number)  {
 
-    if (this.selectedTopicIndex >=0 && this.selectedTopicIndex < this.diagram.topics.length) {
-      // hide last selected topic editor
-      this.showTopicEditor(this.selectedTopicIndex, false); 
-    }
+    // hide last selected topic editor
+    this.showTopicEditor(this.selectedTopicIndex, false); 
 
     console.log('TopicList::editTopic:', topicIndex);
     
@@ -58,14 +66,16 @@ export class AppComponent {
    * @param show Show/hide topic editor flag.
    */
   showTopicEditor(topicIndex:number, show:boolean) {
-    if (show) {
-      document.querySelector(`#topic-label-${topicIndex}`).className = 'hidden';
-      document.querySelector(`#topic-editor-${topicIndex}`).className = 'show';
-      document.querySelector(`#topic-toggles-${topicIndex}`).className = 'show';
-    } else { // hide
-      document.querySelector(`#topic-label-${topicIndex}`).className = 'show';
-      document.querySelector(`#topic-editor-${topicIndex}`).className = 'hidden';
-      document.querySelector(`#topic-toggles-${topicIndex}`).className = 'hidden';
+    if (topicIndex >= 0 && topicIndex < this.diagram.topics.length) {
+      if (show) {
+        document.querySelector(`#topic-label-${topicIndex}`).className = 'hidden';
+        document.querySelector(`#topic-editor-${topicIndex}`).className = 'show';
+        document.querySelector(`#topic-toggles-${topicIndex}`).className = 'show';
+      } else { // hide
+        document.querySelector(`#topic-label-${topicIndex}`).className = 'show';
+        document.querySelector(`#topic-editor-${topicIndex}`).className = 'hidden';
+        document.querySelector(`#topic-toggles-${topicIndex}`).className = 'hidden';
+      }
     }
   }
 }
