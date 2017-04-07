@@ -8,8 +8,12 @@
       <h2>{{diagram.name}}</h2>
 			<div id="list-view" class="data container">
         <ul class="data-list">
-          <li *ngFor="let topic of diagram.topics">
+          <li *ngFor="let topic of diagram.topics; let i=index;"
+            [attr.data-index]="i">
             {{ topic.name }}
+            <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
+            <button (click)="diagram.moveTopicDown(i)">&darr;</button>
+            <button (click)="diagram.removeTopic(i)">&times;</button>
             <div class="topic-editor">
               <span class="label">stroke:</span>
               <div class="color" [style.background-color]="topic.strokeColor"></div>
