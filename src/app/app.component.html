@@ -10,11 +10,16 @@
         <ul class="data-list">
           <li *ngFor="let topic of diagram.topics; let i=index;"
             [attr.data-index]="i" (click)="editTopic(i)">
-            {{ topic.name }}
+            <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
             <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
+              <input placeholder="Enter Topic Name"
+                [attr.value]="topic.name">
+              <button (click)="showTopicEditor(i, false);">&#10003;</button>
+              <button (click)="diagram.removeTopic(i)">&#10007;</button>              
+            </div>            
+            <div class="topic-editor hidden" [attr.id]="'topic-toggles-' + i">
               <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
               <button (click)="diagram.moveTopicDown(i)">&darr;</button>
-              <button (click)="diagram.removeTopic(i)">&times;</button>              
               <span class="label">stroke:</span>
               <div class="color" [style.background-color]="topic.strokeColor"></div>
               <span class="label">fill:</span>

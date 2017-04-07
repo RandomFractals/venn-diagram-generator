@@ -40,13 +40,32 @@ export class AppComponent {
 
     if (this.selectedTopicIndex >=0 && this.selectedTopicIndex < this.diagram.topics.length) {
       // hide last selected topic editor
-      document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'hidden';
+      this.showTopicEditor(this.selectedTopicIndex, false); 
     }
+
+    console.log('TopicList::editTopic:', topicIndex);
     
     // show new topic editor
     this.selectedTopicIndex = topicIndex;
-    console.log('edit topic:', this.selectedTopicIndex);
-    document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'show';
+    this.showTopicEditor(this.selectedTopicIndex, true);
   }
 
+
+  /**
+   * Toggles topic editor display.
+   * 
+   * @param topicIndex Topic index editor to show.
+   * @param show Show/hide topic editor flag.
+   */
+  showTopicEditor(topicIndex:number, show:boolean) {
+    if (show) {
+      document.querySelector(`#topic-label-${topicIndex}`).className = 'hidden';
+      document.querySelector(`#topic-editor-${topicIndex}`).className = 'show';
+      document.querySelector(`#topic-toggles-${topicIndex}`).className = 'show';
+    } else { // hide
+      document.querySelector(`#topic-label-${topicIndex}`).className = 'show';
+      document.querySelector(`#topic-editor-${topicIndex}`).className = 'hidden';
+      document.querySelector(`#topic-toggles-${topicIndex}`).className = 'hidden';
+    }
+  }
 }
