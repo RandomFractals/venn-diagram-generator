@@ -44,11 +44,13 @@ export class Diagram {
    * @param topicName Topic name.
    */
   addTopic(topicName:string) {
+    let topic:Topic;
     if (topicName) {
-      this.topics.push(
-        new Topic(topicName, this.getRandomColor(), this.getRandomColor() ) // stroke, fill
-      );
+      // create and add new topic
+      topic = new Topic(topicName, this.getRandomColor(), this.getRandomColor() ) // stroke, fill
+      this.topics.push(topic);
     }
+    return topic;
   }
 
 
