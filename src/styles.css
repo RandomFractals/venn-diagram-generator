@@ -27,7 +27,13 @@ a {
 	font-size: 9pt;
 }
 
-/* app text elements + link styles */
+.label {
+	font-size: .8em;	
+	color: #333;
+	margin: 0px;
+}
+
+/* app footer styles */
 .footer, .label {
 	font-size: .8em;	
 	color: #333;
@@ -35,15 +41,17 @@ a {
 }
 
 .link {
-	font-size: 0.9em;
-	color: #06f;
+	font-size: 1.2em;
+	color: orangered;
 }
 
 /* footer styles */
 #footer {
-	position: fixed;
+  background-color: #eee;  
 	bottom: 0px;
+  left: 0px;  
 	height: 24px;
-	float: right;
-	right: 10px;
+  width: 100%;
+  padding: 5px;
+	position: fixed;  
 }
