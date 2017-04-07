@@ -21,7 +21,7 @@ export class AppComponent {
   diagram:Diagram = new Diagram('My Venn Diagram');
 
   // selected topic for editing
-  selectedTopicIndex:number = 0;
+  selectedTopicIndex:number = -1;
 
   /**
    * Creates new Venn diagram designer app instance.
@@ -38,8 +38,10 @@ export class AppComponent {
    */
   editTopic(topicIndex:number)  {
 
-    // hide last selected topic editor
-    document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'hidden';
+    if (this.selectedTopicIndex >=0 && this.selectedTopicIndex < this.diagram.topics.length) {
+      // hide last selected topic editor
+      document.querySelector(`#topic-editor-${this.selectedTopicIndex}`).className = 'hidden';
+    }
     
     // show new topic editor
     this.selectedTopicIndex = topicIndex;
