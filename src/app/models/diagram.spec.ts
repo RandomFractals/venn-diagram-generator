@@ -41,4 +41,10 @@ describe('Diagram', () => {
     expect(diagram.topics[2].name).toEqual('Topic 2');
   }));
 
+  it('one can rename a diagram Topic', async(() => {
+    const diagram:Diagram = new Diagram('Test Diagram');
+    diagram.topics[0].name = 'Test Topic';
+    expect(diagram.topics[0].name).toEqual('Test Topic');
+  }));
+
 });
