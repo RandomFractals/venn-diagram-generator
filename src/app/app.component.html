@@ -13,6 +13,7 @@
             <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
             <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
               <input placeholder="Enter Topic Name"
+                [attr.id]="'topic-name-' + i"
                 [attr.value]="topic.name">
               <button (click)="showTopicEditor(i, false);">&#10003;</button>
               <button (click)="diagram.removeTopic(i)">&#10007;</button>              
@@ -21,16 +22,18 @@
               <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
               <button (click)="diagram.moveTopicDown(i)">&darr;</button>
               <span class="label">stroke:</span>
-              <div class="color" [style.background-color]="topic.strokeColor"></div>
+              <div class="color" style="background-color:#666; border-color: red"></div>
               <span class="label">fill:</span>
               <div class="color" [style.background-color]="topic.fillColor"></div>
             </div>
           </li>
         </ul>
+        <div class="toolbar">
         <input #newTopic placeholder="Enter New Topic"
           (click)="showTopicEditor(selectedTopicIndex, false);"
           (keyup.enter)="addTopic(newTopic.value); newTopic.value='';" />
         <button (click)="addTopic(newTopic.value)">Add</button>
+        </div>
 			</div>
 		</div>
 		<div id="footer" class="footer left">

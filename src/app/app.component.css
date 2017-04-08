@@ -56,6 +56,9 @@ h2 {
 	padding: 0px;
 }
 
+.toolbar {
+	background-color: #eee;
+}
 
 /* topic editor container styles */
 .topic-editor {
@@ -67,10 +70,11 @@ h2 {
 }
 
 .color {
-  border: 1px solid black;
+  border: 2px solid black;
   height: 16px;
   width: 16px;
-  display: inline-block;  
+  display: inline-block;
+	margin-top: 5px;
 }
 
 .color:hover {
