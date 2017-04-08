@@ -55,9 +55,18 @@ One must have tests! for good karma and all :)
 
 ## day 2 dev plan:
 
+&#10003; add delete topic and reorder topics feature to the topic list
+&#10003; add diagram topic list updates tests
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListEditor2.png)
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListTests1.png)
+
+## dey 3 dev plan:
+
+- split app component into separate, app toolbar, app footer and topic list components
 - add proper material UI CSS framework for buttons, toggles, topic list sidebar etc.
 - add diagram name edit functionality
-- add delete topic and reorder topics feature to the topic list
 - stub out the actual Venn diagram d3 view component to render diagram topics
 - add proper topic list UI tests
 
