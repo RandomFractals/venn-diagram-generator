@@ -67,15 +67,17 @@ One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListTests1.png)
 
-## dey 3 dev plan:
+## day 3 of dev: Custom Material UI app CSS setup
 
 - &#10003; add custom responsive material UI CSS setup for the app title bar, view content/cards, footer, etc.
 - add inline diagram name/title editor functionality
-- split prototype app component into separate app toolbar, app footer, and topic list components
-- stub out the actual Venn diagram d3 view component to render diagram topics
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListPrettyV.PNG)
 
+## day 4 dev plan:
+
+- split monolithic Angular 4 prototype app component into separate app toolbar, app footer, and topic list components
+- stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions
 
