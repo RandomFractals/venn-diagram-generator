@@ -70,7 +70,7 @@ One must have tests! for good karma and all :)
 ## day 3 of dev: Custom Material UI app CSS setup
 
 - &#10003; add custom responsive material UI CSS setup for the app title bar, view content/cards, footer, etc.
-- add inline diagram name/title editor functionality
+- &#10003; add inline diagram name/title editor functionality
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListPrettyV.PNG)
 
