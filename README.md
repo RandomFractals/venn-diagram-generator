@@ -74,6 +74,9 @@ One must have tests! for good karma and all :)
 - split prototype app component into separate app toolbar, app footer, and topic list components
 - stub out the actual Venn diagram d3 view component to render diagram topics
 
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListPrettyV.PNG)
+
+
 # App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
