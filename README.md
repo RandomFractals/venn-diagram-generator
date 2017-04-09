@@ -56,9 +56,9 @@ One must have tests! for good karma and all :)
 ## day 2 of dev: Inline Topic editor UI prototype:
 
 - &#10003; add delete topic option
-- &#10003; add move topic up/down options for reordering topics
+- &#10003; add move topic up/down options for reordering diagram topics
 - &#10003; add inline topic name editor
-- &#10003; add diagram topic list updates tests
+- &#10003; add diagram view model topic list updates tests
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListEditor2.png)
 
@@ -66,9 +66,9 @@ One must have tests! for good karma and all :)
 
 ## dey 3 dev plan:
 
-- split current app component into separate app toolbar, app footer, and topic list components
-- add proper material UI CSS framework for buttons, toggles, topic list sidebar etc.
-- add diagram name edit functionality
+- &#10003; add custom responsive material UI CSS setup for app title bar, view content/cards, footer, etc.
+- add inline diagram name/title editor functionality
+- split prototype app component into separate app toolbar, app footer, and topic list components
 - stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions
