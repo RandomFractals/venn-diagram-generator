@@ -43,7 +43,7 @@ http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
 # App Dev Status
 
-## day 1: Topic list UI prototype:
+## day 1: Angular 4 App Scaffolding  + basic Topic list UI prototype:
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
@@ -53,10 +53,12 @@ One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma2.png)
 
-## day 2 dev plan:
+## day 2 of dev: Inline Topic editor UI prototype:
 
-&#10003; add delete topic and reorder topics feature to the topic list
-&#10003; add diagram topic list updates tests
+- &#10003; add delete topic option
+- &#10003; add move topic up/down options for reordering topics
+- &#10003; add inline topic name editor
+- &#10003; add diagram topic list updates tests
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListEditor2.png)
 
@@ -64,11 +66,10 @@ One must have tests! for good karma and all :)
 
 ## dey 3 dev plan:
 
-- split app component into separate, app toolbar, app footer and topic list components
+- split current app component into separate app toolbar, app footer, and topic list components
 - add proper material UI CSS framework for buttons, toggles, topic list sidebar etc.
 - add diagram name edit functionality
 - stub out the actual Venn diagram d3 view component to render diagram topics
-- add proper topic list UI tests
 
 # App Build/Run Instructions
 
