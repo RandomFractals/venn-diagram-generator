@@ -13,13 +13,21 @@ html, body, #app {
   overflow: hidden;
 }
 
-/* data vis container styles */
+/* app title bar styles */
+h1 {
+  color: black;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* view container styles */
 .container {
  padding: 0px;
  margin: 0px;
  width: 100%;
 }
 
+/* data, graph content styles */
 .data, .graph {
 	background-color: #eee;
 	border: solid 1px #AACFE4;
@@ -47,7 +55,7 @@ a {
 	margin: 0px;
 }
 
-/* custom Material UI app Card(s) styles */
+/* custom material UI app card(s) styles */
 .card {
   margin: 3px;
   border-radius: 1px;
@@ -65,19 +73,12 @@ a {
 	border-bottom: 1px solid #666;
 }
 
+h2 {
+  font-size: .9em;
+  font-weight: normal;  
+}
+
 /* app footer styles */
-.footer, .label {
-	font-size: .8em;	
-	color: #333;
-	margin: 0px;
-}
-
-.link {
-	font-size: 1.2em;
-	color: orangered;
-}
-
-/* footer styles */
 #footer {
   background-color: #eee;  
 	border-top: 1px solid #666;
@@ -87,4 +88,15 @@ a {
   width: 100%;
   padding: 5px;
 	position: fixed;  
+}
+
+.footer, .label {
+	font-size: .8em;	
+	color: #333;
+	margin: 0px;
+}
+
+.link {
+	font-size: 1.2em;
+	color: orangered;
 }
