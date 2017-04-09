@@ -18,7 +18,7 @@ export class AppComponent {
   title:string = 'Venn Diagram Generator';
 
   // Venn diagram data model instance
-  diagram:Diagram = new Diagram('My Venn Diagram');
+  diagram:Diagram = new Diagram('My');
 
   // selected topic for editing
   selectedTopicIndex:number = -1;

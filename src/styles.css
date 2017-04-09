@@ -53,8 +53,8 @@ h1, .app-title {
 /* menu link styles */
 a {
 	color: #06f;
-  text-decoration: none;
-	font-size: 9pt;
+  text-decoration: underline;
+	font-size: 1.2el;
 }
 
 .label {
@@ -83,7 +83,8 @@ a {
 
 h2 {
   font-size: .9em;
-  font-weight: normal;  
+  font-weight: normal;
+	margin: 0px; 
 }
 
 /* app footer styles */
