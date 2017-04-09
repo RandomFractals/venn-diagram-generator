@@ -55,6 +55,7 @@ a {
 	color: #06f;
   text-decoration: underline;
 	font-size: 1.2el;
+	cursor: pointer;
 }
 
 .label {
