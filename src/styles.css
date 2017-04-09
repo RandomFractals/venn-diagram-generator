@@ -47,6 +47,14 @@ a {
 	margin: 0px;
 }
 
+/* app card styles */
+.card-title {
+	padding: 5px;
+	background-color: #eee;
+	border-bottom: 1px solid #666;
+}
+
+
 /* app footer styles */
 .footer, .label {
 	font-size: .8em;	
