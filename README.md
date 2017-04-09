@@ -22,7 +22,7 @@ https://twitter.com/dataandme/status/848850426095120384
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsInTheWild.png)
 
-## Ultimate Project Goal
+# Ultimate Project Goal
 
 Ideally, we'd like to create an app for you to gen Venn Diagrams like this:
 
@@ -40,6 +40,9 @@ Best bg story on how we ended up here is on kdnuggets:
 
 http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 
+# Side Project Goal
+
+Demonstrate Angular 4, d3 v4, and custom Material UI CSS mini-app setup best practices from start to finish with micro commits in a few days or so.
 
 # App Dev Status
 
@@ -48,7 +51,7 @@ http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicList3.png)
 
 Also, the boilerplate angular4 jasmine tests are still passing. It's a good sign. 
-I'll double down on that for the list comp. tomorrow.
+I'll double down on that part for the topic list view model type in day 2 of dev.
 One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramsTestKarma2.png)
@@ -66,7 +69,7 @@ One must have tests! for good karma and all :)
 
 ## dey 3 dev plan:
 
-- &#10003; add custom responsive material UI CSS setup for app title bar, view content/cards, footer, etc.
+- &#10003; add custom responsive material UI CSS setup for the app title bar, view content/cards, footer, etc.
 - add inline diagram name/title editor functionality
 - split prototype app component into separate app toolbar, app footer, and topic list components
 - stub out the actual Venn diagram d3 view component to render diagram topics
