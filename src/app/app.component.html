@@ -6,7 +6,20 @@
 	<div id="content" class="container">	
 		<div id="view-container" class="card container">
       <div class="card-title">
-        <h2><a>{{diagram.name}}</a> Venn Diagram</h2>
+        <h2>
+          <a #diagramNameEditLink
+            (click)="diagramNameEditor.class='show'; diagramNameEditLink.class='hidden'; showTopicEditor(selectedTopicIndex, false);">
+            {{diagram.name}}
+          </a> 
+          <div #diagramNameEditor class="show">
+            <input #diagramName placeholder="Name Your"
+              [attr.value]="diagram.name"
+              (keyup.enter)="diagram.name = diagramName.value; diagramNameEditor.class='hidden'; diagramNameEditor.class='show'" />
+            <button id="save-diagram-name-button" 
+              (click)="diagram.name = diagramName.value; diagramNameEditor.class='hidden';">&#10003;</button>
+          </div>     
+          Venn Diagram
+        </h2>
       </div>
 			<div id="list-view" class="data container">
         <ul class="data-list">
@@ -31,10 +44,10 @@
           </li>
         </ul>
         <div class="toolbar">
-        <input #newTopic placeholder="Enter New Topic"
-          (click)="showTopicEditor(selectedTopicIndex, false);"
-          (keyup.enter)="addTopic(newTopic.value); newTopic.value='';" />
-        <button (click)="addTopic(newTopic.value)">Add</button>
+          <input #newTopic placeholder="Enter New Topic"
+            (click)="showTopicEditor(selectedTopicIndex, false);"
+            (keyup.enter)="addTopic(newTopic.value); newTopic.value='';" />
+          <button id="add-topic-button" (click)="addTopic(newTopic.value)">Add</button>
         </div>
 			</div>
 		</div>
