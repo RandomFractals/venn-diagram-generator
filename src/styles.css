@@ -62,6 +62,7 @@ a {
 /* footer styles */
 #footer {
   background-color: #eee;  
+	border-top: 1px solid #666;
 	bottom: 0px;
   left: 0px;  
 	height: 24px;
