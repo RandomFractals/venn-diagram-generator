@@ -1,4 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+Global app styles
+
+Tip: use this CSS file for setting app cards and shared html tags styles.
+Import other style files with media filters here
+for your custom CSS app look and feel.
+*/
+
+/* app page/content styles */
+html, body, #app {
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
 /* data vis container styles */
 .container {
  padding: 0px;
