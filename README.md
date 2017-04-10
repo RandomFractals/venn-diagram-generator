@@ -36,9 +36,15 @@ https://twitter.com/MrBenWard/status/836489614676353024
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/pancakesVennDiagram.jpg)
 
+## How we got here:
+
 Best bg story on how we ended up here is on kdnuggets:
 
 http://www.kdnuggets.com/2016/10/battle-data-science-venn-diagrams.html
+
+Also get to know 42 V's of data science. Fun read:
+
+http://www.kdnuggets.com/2017/04/42-vs-big-data-data-science.html
 
 # Side Project Goal
 
