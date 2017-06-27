@@ -80,10 +80,10 @@ One must have tests! for good karma and all :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/vennDiagramTopicListPrettyV.PNG)
 
-## day 4 dev plan:
+## day 4 of dev (6/27/2017):
 
-- split monolithic Angular 4 prototype app component into separate app toolbar, app footer, and topic list components
-- stub out the actual Venn diagram d3 view component to render diagram topics
+- &#10003; split monolithic Angular 4 prototype app component into separate app menu, app footer, and topic list components
+- TODO: stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions
 
@@ -91,11 +91,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+
+The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Run `ng generate component component-name` to generate a new component. 
+
+You can also use `ng generate directive|pipe|service|class|module`.
 
 ## Build
 
@@ -108,6 +112,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help

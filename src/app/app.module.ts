@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
+import { TopicListComponent } from './topic-list/topic-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppMenuComponent,    
-    AppFooterComponent
+    AppFooterComponent, 
+    TopicListComponent
   ],
   imports: [
     BrowserModule,
