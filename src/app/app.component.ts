@@ -13,9 +13,6 @@ import {Topic} from './models/topic';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  // app title
-  title:string = 'Venn Diagram Generator';
 
   // Venn diagram data model instance
   diagram:Diagram = new Diagram('My');

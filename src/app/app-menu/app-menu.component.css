@@ -1,0 +1,15 @@
+
+/* app title bar styles */
+#app-title-bar {
+	background: #06f;
+  min-height: 32px;
+  border-bottom: 1px solid rgba(#000, .12);
+}
+
+h1, .app-title {
+	color: white;
+	font-size: 1em;
+  font-weight: normal;
+  margin: 0px;
+  padding: 10px;
+}
