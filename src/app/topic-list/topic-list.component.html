@@ -1,20 +1,27 @@
-<aside id="topic-list" class="card container">
+<aside id="topic-list" class="topic-list card container">
+  <!-- topic list section header -->
   <div class="card-title">
     <h2>
-      <a #diagramNameEditLink (click)="diagramNameEditor.style='display:block'; diagramNameEditLink.style='display:none'; showTopicEditor(selectedTopicIndex, false);">
-            {{diagram.name}}
-          </a>
+      <!-- TODO: clean up those enters and clicks! -->
+      <a #diagramNameEditLink 
+        (click)="diagramNameEditor.style='display:block'; diagramNameEditLink.style='display:none'; showTopicEditor(selectedTopicIndex, false);">
+        {{diagram.name}}
+      </a>
       <div #diagramNameEditor class="hidden">
-        <input #diagramName placeholder="Name Your" [attr.value]="diagram.name" (keyup.enter)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'"
+        <input #diagramName placeholder="Name Your" [attr.value]="diagram.name" 
+          (keyup.enter)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'"
         />
-        <button id="save-diagram-name-button" (click)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'">&#10003;</button>
+        <button id="save-diagram-name-button" 
+          (click)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'">&#10003;</button>
       </div>
       Venn Diagram
     </h2>
   </div>
+  <!-- topic list section content -->
   <div id="list-view" class="data container">
     <ul class="data-list">
-      <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" (click)="editTopic(i)">
+      <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" 
+        (click)="editTopic(i)">
         <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
         <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
           <input placeholder="Enter Topic Name" [attr.id]="'topic-name-' + i" [attr.value]="topic.name">
@@ -31,9 +38,11 @@
         </div>
       </li>
     </ul>
+    <!-- add topic toolbar -->
     <div class="toolbar">
-      <input #newTopic placeholder="Enter New Topic" (click)="showTopicEditor(selectedTopicIndex, false);" (keyup.enter)="addTopic(newTopic.value); newTopic.value='';"
-      />
+      <input #newTopic placeholder="Enter New Topic" 
+        (click)="showTopicEditor(selectedTopicIndex, false);" 
+        (keyup.enter)="addTopic(newTopic.value); newTopic.value='';" />
       <button id="add-topic-button" (click)="addTopic(newTopic.value)">Add</button>
     </div>
   </div>
