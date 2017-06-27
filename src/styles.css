@@ -2,6 +2,7 @@
 Global app styles
 
 Tip: use this CSS file for setting app cards and shared html tags styles.
+
 Import other style files with media filters here
 for your custom CSS app look and feel.
 */
@@ -11,6 +12,22 @@ html, body, #app {
   height: 100%;
   margin: 0px;
   overflow: hidden;
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;	
+}
+
+
+/* form fields/buttons typography styles */
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 /* app view container styles */

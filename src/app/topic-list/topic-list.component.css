@@ -1,3 +1,7 @@
+aside {
+  width: 260px;
+  float: left;
+}
 
 /* data list item styles */
 .data-list {
