@@ -87,26 +87,3 @@ h2 {
   font-weight: normal;
 	margin: 0px; 
 }
-
-/* app footer styles */
-#footer {
-  background-color: #eee;  
-	border-top: 1px solid #666;
-	bottom: 0px;
-  left: 0px;  
-	height: 24px;
-  width: 100%;
-  padding: 5px;
-	position: fixed;  
-}
-
-.footer, .label {
-	font-size: .8em;	
-	color: #333;
-	margin: 0px;
-}
-
-.link {
-	font-size: 1.2em;
-	color: orangered;
-}
