@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './app-menu.component.html',
-  styleUrls: ['./app-menu.component.css']
+  selector: 'app-header',
+  templateUrl: './app-header.component.html',
+  styleUrls: ['./app-header.component.css']
 })
-export class AppMenuComponent implements OnInit {
+export class AppHeaderComponent implements OnInit {
   
   // app title
   title:string = 'Venn Diagram Generator';

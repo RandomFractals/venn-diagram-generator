@@ -1,6 +1,6 @@
 
 /* app title bar styles */
-#app-title-bar {
+.app-header {
 	background: #06f;
   min-height: 32px;
   border-bottom: 1px solid rgba(#000, .12);

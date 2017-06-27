@@ -1,6 +1,6 @@
 
 /* app footer styles */
-#footer {
+footer {
   background-color: #eee;  
 	border-top: 1px solid #666;
 	bottom: 0px;
@@ -11,7 +11,7 @@
 	position: fixed;  
 }
 
-.footer, .label {
+footer, .label {
 	font-size: .8em;	
 	color: #333;
 	margin: 0px;

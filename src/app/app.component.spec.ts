@@ -1,18 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
-import { AppMenuComponent } from './app-menu/app-menu.component';
-import { AppFooterComponent } from './app-footer/app-footer.component';
+import { AppHeaderComponent } from './app-header/app-header.component';
 import { TopicListComponent } from './topic-list/topic-list.component';
+import { VennDiagramComponent } from './venn-diagram/venn-diagram.component';
+import { AppFooterComponent } from './app-footer/app-footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        AppMenuComponent,    
-        AppFooterComponent,
-        TopicListComponent        
+        AppHeaderComponent, 
+        TopicListComponent, 
+        VennDiagramComponent,
+        AppFooterComponent, 
       ],
     }).compileComponents();
   }));

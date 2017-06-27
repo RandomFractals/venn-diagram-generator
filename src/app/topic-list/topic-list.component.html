@@ -1,47 +1,40 @@
-		<div id="view-container" class="card container">
-      <div class="card-title">
-        <h2>
-          <a #diagramNameEditLink
-            (click)="diagramNameEditor.style='display:block'; diagramNameEditLink.style='display:none'; showTopicEditor(selectedTopicIndex, false);">
+<aside id="topic-list" class="card container">
+  <div class="card-title">
+    <h2>
+      <a #diagramNameEditLink (click)="diagramNameEditor.style='display:block'; diagramNameEditLink.style='display:none'; showTopicEditor(selectedTopicIndex, false);">
             {{diagram.name}}
-          </a> 
-          <div #diagramNameEditor class="hidden">
-            <input #diagramName placeholder="Name Your"
-              [attr.value]="diagram.name"
-              (keyup.enter)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'" />
-            <button id="save-diagram-name-button" 
-              (click)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'">&#10003;</button>
-          </div>
-          Venn Diagram
-        </h2>
+          </a>
+      <div #diagramNameEditor class="hidden">
+        <input #diagramName placeholder="Name Your" [attr.value]="diagram.name" (keyup.enter)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'"
+        />
+        <button id="save-diagram-name-button" (click)="diagram.name = diagramName.value; diagramNameEditor.style='display:none'; diagramNameEditLink.style='display:inline'">&#10003;</button>
       </div>
-			<div id="list-view" class="data container">
-        <ul class="data-list">
-          <li *ngFor="let topic of diagram.topics; let i=index;"
-            [attr.data-index]="i" (click)="editTopic(i)">
-            <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
-            <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
-              <input placeholder="Enter Topic Name"
-                [attr.id]="'topic-name-' + i"
-                [attr.value]="topic.name">
-              <button (click)="showTopicEditor(i, false);">&#10003;</button>
-              <button (click)="diagram.removeTopic(i)">&#10007;</button>              
-            </div>            
-            <div class="topic-editor hidden" [attr.id]="'topic-toggles-' + i">
-              <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
-              <button (click)="diagram.moveTopicDown(i)">&darr;</button>
-              <span class="label">stroke:</span>
-              <div class="color" style="background-color:#666; border-color: red"></div>
-              <span class="label">fill:</span>
-              <div class="color" [style.background-color]="topic.fillColor"></div>
-            </div>
-          </li>
-        </ul>
-        <div class="toolbar">
-          <input #newTopic placeholder="Enter New Topic"
-            (click)="showTopicEditor(selectedTopicIndex, false);"
-            (keyup.enter)="addTopic(newTopic.value); newTopic.value='';" />
-          <button id="add-topic-button" (click)="addTopic(newTopic.value)">Add</button>
+      Venn Diagram
+    </h2>
+  </div>
+  <div id="list-view" class="data container">
+    <ul class="data-list">
+      <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" (click)="editTopic(i)">
+        <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
+        <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
+          <input placeholder="Enter Topic Name" [attr.id]="'topic-name-' + i" [attr.value]="topic.name">
+          <button (click)="showTopicEditor(i, false);">&#10003;</button>
+          <button (click)="diagram.removeTopic(i)">&#10007;</button>
         </div>
-			</div>
-		</div>
+        <div class="topic-editor hidden" [attr.id]="'topic-toggles-' + i">
+          <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
+          <button (click)="diagram.moveTopicDown(i)">&darr;</button>
+          <span class="label">stroke:</span>
+          <div class="color" style="background-color:#666; border-color: red"></div>
+          <span class="label">fill:</span>
+          <div class="color" [style.background-color]="topic.fillColor"></div>
+        </div>
+      </li>
+    </ul>
+    <div class="toolbar">
+      <input #newTopic placeholder="Enter New Topic" (click)="showTopicEditor(selectedTopicIndex, false);" (keyup.enter)="addTopic(newTopic.value); newTopic.value='';"
+      />
+      <button id="add-topic-button" (click)="addTopic(newTopic.value)">Add</button>
+    </div>
+  </div>
+</aside>
