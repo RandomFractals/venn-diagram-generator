@@ -103,7 +103,11 @@ You can also use `ng generate directive|pipe|service|class|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. 
+
+Build artifacts will be stored in the `dist/` directory. 
+
+Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
@@ -117,7 +121,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README]
+To get more help on the Angular CLI use `ng help` 
+
+or see Angular CLI README
 (https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Yarn Note
