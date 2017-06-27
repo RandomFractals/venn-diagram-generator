@@ -22,4 +22,11 @@ describe('AppMenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have 'Venn Diagram Generator' app title`, async(() => {
+    const fixture = TestBed.createComponent(AppMenuComponent);
+    const appMenu = fixture.debugElement.componentInstance;
+    expect(appMenu.title).toEqual('Venn Diagram Generator');
+  }));
+  
 });
