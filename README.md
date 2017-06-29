@@ -82,7 +82,12 @@ One must have tests! for good karma and all :)
 
 ## day 4 of dev (6/27/2017):
 
-- &#10003; split monolithic Angular 4 prototype app component into separate app menu, app footer, and topic list components
+- &#10003; split monolithic Angular 4 prototype app component into separate app header/footer, topic list, and actual venn diagram components
+- &#10003; set up a half ass decent 2 cols layot for topic list and diagram view comp.
+
+## day 5 of dev
+- &#10003; deploy to venn-diagrams.herokuapp.com for topic list test on mobile and UI layout preview
+- TODO: switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
 - TODO: stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions
@@ -129,3 +134,15 @@ or see Angular CLI README
 ## Yarn Note
 
 Run `ng set --global packageManager=yarn` to use Yarn package manager
+
+## References
+
+How to deploy Angular 4 web app with Express to heroku:
+
+https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915ca
+
+Decent no frills html5/css3 2 cols layout setup:
+
+https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/
+
+
