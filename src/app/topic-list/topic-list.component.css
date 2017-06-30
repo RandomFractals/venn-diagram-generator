@@ -47,8 +47,17 @@
 	padding: 0px;
 }
 
+/* toolbar/button styles */
 .toolbar {
 	background-color: #eee;
+}
+
+.green-button {
+	color: green;
+}
+
+.red-button {
+	color: red;
 }
 
 /* topic editor container styles */

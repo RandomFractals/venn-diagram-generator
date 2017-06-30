@@ -25,8 +25,8 @@
         <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
         <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
           <input placeholder="Enter Topic Name" [attr.id]="'topic-name-' + i" [attr.value]="topic.name">
-          <button (click)="showTopicEditor(i, false);">&#10003;</button>
-          <button (click)="diagram.removeTopic(i)">&#10007;</button>
+          <button (click)="showTopicEditor(i, false);" class="green-button">&#10003;</button>
+          <button (click)="diagram.removeTopic(i)" class="red-button">&#10007;</button>
         </div>
         <div class="topic-editor hidden" [attr.id]="'topic-toggles-' + i">
           <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
