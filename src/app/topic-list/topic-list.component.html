@@ -1,4 +1,4 @@
-<aside id="topic-list" class="side-bar topic-list card container">
+<aside id="topic-list" class="topic-list card">
   <!-- topic list section header -->
   <div class="card-title">
     <h2>
@@ -18,7 +18,7 @@
     </h2>
   </div>
   <!-- topic list section content -->
-  <div id="list-view" class="data container">
+  <div id="list-view"> <!--class="data container"-->
     <ul class="data-list">
       <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" 
         (click)="editTopic(i)">

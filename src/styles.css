@@ -8,15 +8,15 @@ for your custom CSS app look and feel.
 */
 
 /* app page/content styles */
-html, body, #app {
-  height: 100%;
-  margin: 0px;
-  overflow: hidden;
+html, body {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;	
+	-ms-text-size-adjust: 100%;	
 }
 
+body {
+	margin: 0;
+}
 
 /* form fields/buttons typography styles */
 body,
@@ -26,7 +26,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: 'Helvetica', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 }
 
@@ -89,3 +89,60 @@ h2 {
   font-weight: normal;
 	margin: 0px; 
 }
+
+
+/* App view styles */
+.app-view {
+	background: #ededed;
+	min-height: 100vh;
+}
+
+.app-header,
+.main-content,
+.side-bar,
+.footer {
+	padding: 0px;
+}
+
+.main-content {
+	background: white;
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+	.app-view {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	@supports (display: grid) {
+
+		.app-view {
+			display: grid;
+			grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+			grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+		}
+
+		.app-header,
+		.app-footer {
+			grid-column: span 8;
+		}
+
+		.main-content {
+			grid-column: 2/6;
+		}
+
+		.side-bar {
+			grid-column: 6/8;
+		}
+	}
+}
+

@@ -1,9 +1,9 @@
 
 /* app title bar styles */
-.app-header {
+.header {
 	background: #06f;
   min-height: 32px;
-  width: 100%;  
+  /*width: 100%;  */
   border-bottom: 1px solid rgba(#000, .12);
 }
 
