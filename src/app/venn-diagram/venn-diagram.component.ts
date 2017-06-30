@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 
 @Component({
   selector: 'venn-diagram',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VennDiagramComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngZone:NgZone) {
+    window.onresize = (windowResizeEvent) => {
+      ngZone.run( () => {
+        console.log(`Venn-Diagram::onWindowResize: w=${window.innerWidth} h=${window.innerHeight}`);
+      });
+    };
+   }
 
   ngOnInit() {
   }
