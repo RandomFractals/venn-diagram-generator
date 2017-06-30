@@ -90,6 +90,9 @@ One must have tests! for good karma and all :)
 - &#10003; switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
 - TODO: stub out the actual Venn diagram d3 view component to render diagram topics
 
+Latest with Augury:
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennD2LayoutWithAugury.PNG)
+
 # App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
