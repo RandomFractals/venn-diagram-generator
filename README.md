@@ -91,7 +91,12 @@ One must have tests! for good karma and all :)
 - TODO: stub out the actual Venn diagram d3 view component to render diagram topics
 
 Latest with Augury:
+
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennD2LayoutWithAugury.png)
+
+Blank app canvas for that Venn D SVG render:)
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDBlankCanvas.png)
 
 # App Build/Run Instructions
 
