@@ -10,7 +10,7 @@ export class VennDiagramComponent implements OnInit {
   constructor(private ngZone:NgZone) {
     window.onresize = (windowResizeEvent) => {
       ngZone.run( () => {
-        console.log(`Venn-Diagram::onWindowResize: w=${window.innerWidth} h=${window.innerHeight}`);
+        console.log(`VennDiagram::onWindowResize: w=${window.innerWidth} h=${window.innerHeight}`);
       });
     };
    }
