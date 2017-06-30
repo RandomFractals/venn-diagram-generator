@@ -54,10 +54,12 @@
 
 .green-button {
 	color: green;
+	font-weight: bold;
 }
 
 .red-button {
 	color: red;
+	font-weight: bold;
 }
 
 /* topic editor container styles */
