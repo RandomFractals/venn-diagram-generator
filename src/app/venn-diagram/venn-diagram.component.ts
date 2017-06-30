@@ -25,4 +25,21 @@ export class VennDiagramComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Exports current diagram view SVG.
+   */
+  exportSvg() {
+    console.log(`VennDiagram::exportSvg: TODO`);
+    // TODO
+  }
+
+  /**
+   * Saves current diagram view image in png format.
+   */
+  saveAsPng() {
+    console.log(`VennDiagram::saveAsPng: TODO`);
+    // TODO
+  }
+
+
 }
