@@ -87,7 +87,7 @@ One must have tests! for good karma and all :)
 
 ## day 5 of dev
 - &#10003; deploy to venn-diagrams.herokuapp.com for topic list test on mobile and UI layout preview
-- TODO: switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
+- &#10003; switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
 - TODO: stub out the actual Venn diagram d3 view component to render diagram topics
 
 # App Build/Run Instructions

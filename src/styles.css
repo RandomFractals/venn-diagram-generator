@@ -1,7 +1,8 @@
 /**
 Global app styles
 
-Tip: use this CSS file for setting app cards and shared html tags styles.
+Tip: use this CSS file for setting up 
+general app cards and shared html tags styles.
 
 Import other style files with media filters here
 for your custom CSS app look and feel.
@@ -121,10 +122,8 @@ If no grid support, limit width to 50em and center align
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
-
 @media screen and (min-width: 600px) {
 	@supports (display: grid) {
-
 		.app-view {
 			display: grid;
 			grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
