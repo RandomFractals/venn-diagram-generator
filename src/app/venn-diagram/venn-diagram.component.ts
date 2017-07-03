@@ -41,7 +41,7 @@ export class VennDiagramComponent implements OnInit {
 
 
   /**
-   * Exports current diagram view SVG.
+   * Exports current diagram view SVG via blob data download link trick.
    */
   exportSvg() {
     console.log(`VennDiagram::exportSvg: ${this.diagram.name}-VennDiagram.svg`);
@@ -53,29 +53,84 @@ export class VennDiagramComponent implements OnInit {
     const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
 
     // create svg blobl url
-    const svgUrl = URL.createObjectURL(svgBlob);
-
-    // add svg blob download link
-    const svgDownloadLink = document.createElement('a');
-    svgDownloadLink.href = svgUrl;
+    const svgBlobUrl = URL.createObjectURL(svgBlob);
 
     // download svg
-    svgDownloadLink.download = `${this.diagram.name}-VennDiagram.svg`;
-    document.body.appendChild(svgDownloadLink);
-    svgDownloadLink.click();
-
-    // remove svg download link
-    document.body.removeChild(svgDownloadLink);
+    this.downloadBlob(svgBlobUrl, `${this.diagram.name}-VennDiagram.svg`);
   }
 
 
   /**
-   * Saves current diagram view image in png format.
+   * Saves current diagram view image in png format
+   * via svg blob to canvas image export trick.
    */
   saveAsPng() {
-    console.log(`VennDiagram::saveAsPng: TODO`);
-    // TODO
+
+    const fileName = `${this.diagram.name}-VennDiagram.png`;
+    console.log(`VennDiagram::saveAsPng: ${fileName}`);
+    console.log(this.svg.viewBox.baseVal); //getBBox());
+
+    // create canvas for generating image data
+    const canvas = document.createElement('canvas');
+    const bbox = this.svg.viewBox.baseVal; //.getBBox();
+    canvas.width = bbox.width;
+    canvas.height = bbox.height;
+    const canvasContext = canvas.getContext('2d');
+    canvasContext.clearRect(0, 0, bbox.width, bbox.height);
+
+    // get svg content
+    const svgData = this.svg.outerHTML;
+
+    // create svg blob
+    const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+
+    // create svg blobl url
+    const svgBlobUrl = URL.createObjectURL(svgBlob);
+
+    // create diagram image
+    const image = new Image();
+
+    // load and save diagram image
+    const download = this.downloadBlob;
+    image.onload = function () {
+      // draw loaded image on canvas
+      canvasContext.drawImage(image, 0, 0);
+      URL.revokeObjectURL(svgBlobUrl);
+      if (typeof navigator !== 'undefined' && navigator.msSaveOrOpenBlob) {
+        const imageBlob = canvas.msToBlob();
+        navigator.msSaveOrOpenBlob(imageBlob, fileName);
+      } else {
+        const imageDataUrl = canvas.toDataURL('image/png')
+            .replace('image/png', 'image/octet-stream');
+        download(imageDataUrl, fileName);
+      }
+      //document.removeChild(canvas);
+    };
+
+    // trigger svg image load
+    image.src = svgBlobUrl;
+
+  } // end of saveAsPng()
+
+
+  /*--------------- Private Methods -----------------------*/
+
+  /**
+   * Downloads a blob for svg export and save as png.
+   * @param blobUrl Blob data url.
+   * @param fileName File name for saving blob data.
+   */
+  private downloadBlob(blobUrl, fileName) {
+    // create download link
+    const downloadLink = document.createElement('a');
+    downloadLink.href = blobUrl;
+    downloadLink.download = fileName;
+    document.body.appendChild(downloadLink);
+
+    // download blob data
+    downloadLink.click();
+
+    // remove download link
+    document.body.removeChild(downloadLink);
   }
-
-
 }
