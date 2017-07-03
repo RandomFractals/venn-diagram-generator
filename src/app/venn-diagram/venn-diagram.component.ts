@@ -12,9 +12,9 @@ import {Topic} from '../models/topic';
 export class VennDiagramComponent implements OnInit {
 
   // Venn diagram data model instance
-  diagram: Diagram = new Diagram('My');
+  diagram: Diagram = new Diagram('Test');
 
-  constructor(private ngZone:NgZone) {
+  constructor(private ngZone: NgZone) {
     window.onresize = (windowResizeEvent) => {
       ngZone.run( () => {
         console.log(`VennDiagram::onWindowResize: w=${window.innerWidth} h=${window.innerHeight}`);
@@ -29,8 +29,16 @@ export class VennDiagramComponent implements OnInit {
    * Exports current diagram view SVG.
    */
   exportSvg() {
-    console.log(`VennDiagram::exportSvg: TODO`);
-    // TODO
+    console.log(`VennDiagram::exportSvg: ${this.diagram.name}.svg`);
+    const svgData = document.querySelector('#svg').outerHTML;
+    const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+    const svgUrl = URL.createObjectURL(svgBlob);
+    const downloadLink = document.createElement('a');
+    downloadLink.href = svgUrl;
+    downloadLink.download = `${this.diagram.name}.svg`;
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   }
 
   /**
