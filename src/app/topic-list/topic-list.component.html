@@ -21,6 +21,8 @@
   <div id="list-view"> <!--class="data container"-->
     <ul class="data-list">
       <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" 
+        [style.background-color]="topic.fillColor"
+        [style.border-color]="topic.strokeColor"
         (click)="editTopic(i)">
         <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
         <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
@@ -32,9 +34,9 @@
           <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
           <button (click)="diagram.moveTopicDown(i)">&darr;</button>
           <span class="label">stroke:</span>
-          <div class="color" style="background-color:#666; border-color: red"></div>
+          <div class="color-box" [style.border-color]="topic.strokeColor"></div>
           <span class="label">fill:</span>
-          <div class="color" [style.background-color]="topic.fillColor"></div>
+          <div class="color-box" [style.background-color]="topic.fillColor"></div>
         </div>
       </li>
     </ul>

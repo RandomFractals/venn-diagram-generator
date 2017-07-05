@@ -12,5 +12,8 @@ export class Topic {
    * @param strokeColor Topic shape stroke color.
    * @param fillColor Topic shape fill color.
    */
-  constructor(public name:string, public strokeColor:string, public fillColor:string) {}
+  constructor(public name: string,
+    public strokeColor: string,
+    public fillColor: string) {
+    }
 }

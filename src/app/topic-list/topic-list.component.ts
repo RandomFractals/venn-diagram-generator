@@ -42,7 +42,7 @@ export class TopicListComponent implements OnInit {
   editTopic(topicIndex: number)  {
 
     // hide last selected topic editor
-    this.showTopicEditor(this.selectedTopicIndex, false); 
+    this.showTopicEditor(this.selectedTopicIndex, false);
 
     console.log('TopicList::editTopic:', topicIndex);
 
@@ -53,7 +53,7 @@ export class TopicListComponent implements OnInit {
 
 
   /**
-   * Toggles topic editor display.
+   * Toggles inline topic editor display.
    *
    * @param topicIndex Topic index editor to show.
    * @param show Show/hide topic editor flag.
