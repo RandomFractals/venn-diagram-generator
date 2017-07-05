@@ -86,9 +86,10 @@ One must have tests! for good karma and all :)
 - &#10003; set up a half ass decent 2 cols layot for topic list and diagram view comp.
 
 ## day 5 of dev
-- &#10003; deploy to venn-diagrams.herokuapp.com for topic list test on mobile and UI layout preview
+- &#10003; deploy to https://venn-diagrams.herokuapp.com for topic list test on mobile and UI layout preview
 - &#10003; switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
-- TODO: stub out the actual Venn diagram d3 view component to render diagram topics
+- TODO: stub out the actual Venn diagram SVG view component to render diagram topics. 
+  Use this code block: http://bl.ocks.org/bycoffe/3404776
 
 Latest with Augury:
 
@@ -156,5 +157,9 @@ https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915
 Decent no frills html5/css3 2 cols layout setup:
 
 https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/
+
+Placing SVG elements around a circle d3 code block:
+
+http://bl.ocks.org/bycoffe/3404776
 
 
