@@ -98,6 +98,10 @@ Blank app canvas for that Venn D SVG render:)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDBlankCanvas.png)
 
+Still lots todo :)
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramsGenAppMVPTodo.jpg)
+
 # App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
