@@ -154,7 +154,7 @@ How to deploy Angular 4 web app with Express to heroku:
 
 https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915ca
 
-Decent no frills html5/css3 2 cols layout setup:
+Decent no frills responsive html5/css3 2 cols layout setup for desktop and mobile browsers:
 
 https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/
 
@@ -162,4 +162,12 @@ Placing SVG elements around a circle d3 code block:
 
 http://bl.ocks.org/bycoffe/3404776
 
+Also, you might like this handy d3 code block bit, if you do your dataViz dash with d3: 
+How to Export SVG d3 data viz to Png or Jpeg :)
+
+http://bl.ocks.org/Rokotyan/0556f8facbaf344507cdc45dc3622177
+
+See my simple solution for it (no d3) for this Angular4 app in: 
+
+https://github.com/RandomFractals/venn-diagram-generator/tree/master/src/app/venn-diagram
 
