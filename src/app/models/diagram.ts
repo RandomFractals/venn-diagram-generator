@@ -61,9 +61,10 @@ export class Diagram {
     let newTopic: Topic;
     if (topicName) {
       // create and add new topic
-      newTopic = new Topic(topicName, 
+      newTopic = new Topic(topicName,
         this.getRandomColor(this.strokeColorPalette),
-        this.getRandomColor(this.fillColorPalette) );
+        //this.getRandomColor(this.fillColorPalette) );
+        this.fillColorPalette[this.topics.length % this.fillColorPalette.length]);
       this.topics.push(newTopic);
     }
     return newTopic;
