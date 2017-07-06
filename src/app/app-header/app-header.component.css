@@ -22,8 +22,9 @@ h1, .app-title {
 }
 
 .app-tip > a {
-	color: #ffff00;
-	font-size: 1.1em;
-  font-weight: bold;
+	color: #00ffff;
+	font-size: 1.2em;
+  font-weight: normal;
+  text-decoration: none;
 }
 
