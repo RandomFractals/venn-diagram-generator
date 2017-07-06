@@ -3,6 +3,13 @@
   float: left;
 }*/
 
+/* UI tip text styles */
+.ui-tip {
+	color: #666;
+	font-size: .8em;
+	padding: 5px;
+}
+
 /* data list item styles */
 .data-list {
 	margin: 0px;
