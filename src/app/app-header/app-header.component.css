@@ -11,5 +11,19 @@ h1, .app-title {
 	font-size: 1em;
   font-weight: normal;
   margin: 0px;
-  padding: 10px;
+  padding-left: 10px;
 }
+
+/* app tip text styles */
+.app-tip {
+	color: #eee;
+	font-size: .8em;
+	padding-left: 10px;
+}
+
+.app-tip > a {
+	color: #ffff00;
+	font-size: 1.1em;
+  font-weight: bold;
+}
+
