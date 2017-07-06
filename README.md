@@ -99,9 +99,13 @@ Blank app canvas for that Venn D SVG render:)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDBlankCanvas.png)
 
-Still lots todo :)
+7-5-2017: Still lots todo :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramsGenAppMVPTodo.jpg)
+
+7-6-2017: Latest with funky colors and some app UI tips on heroku: https://venn-diagrams.herokuapp.com/
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png)
 
 # App Build/Run Instructions
 
