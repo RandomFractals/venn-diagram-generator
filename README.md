@@ -175,3 +175,6 @@ See my simple solution for it (no d3) for this Angular4 app in:
 
 https://github.com/RandomFractals/venn-diagram-generator/tree/master/src/app/venn-diagram
 
+All you can eat DataScience VennDiagrams on bing for this proj. research reference:
+
+https://www.bing.com/images/search?q=data+science+venn+diagram&FORM=IGRE
