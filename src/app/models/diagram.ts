@@ -30,11 +30,12 @@ export class Diagram {
    *
    * @param name Diagram name.
    */
-  constructor(public name: string) {
-    // add 3 starter topics for now
-    this.addTopic('Topic 1');
-    this.addTopic('Topic 2');
-    this.addTopic('Topic 3');
+  constructor(public name: string = 'Data Science') {
+    // add 3 starter topics for this diagram:
+    // we'll stick with Data Science primes for now
+    this.addTopic('Hacking Skills');
+    this.addTopic('Math & Stats');
+    this.addTopic('Domain Expertise');
   }
 
 
