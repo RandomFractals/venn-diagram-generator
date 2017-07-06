@@ -30,15 +30,15 @@ describe('Diagram', () => {
   it('one can move a Topic Up in the Diagram topic list', async(() => {
     const diagram:Diagram = new Diagram('Test Diagram');
     diagram.moveTopicUp(1); // move up 2nd topic
-    expect(diagram.topics[0].name).toEqual('Topic 2');
-    expect(diagram.topics[1].name).toEqual('Topic 1');
+    expect(diagram.topics[0].name).toEqual('Math & Stats'); // topic 2
+    expect(diagram.topics[1].name).toEqual('Hacking Skills'); // topic 1
   }));
 
   it('one can move a Topic Down in the Diagram topic list', async(() => {
     const diagram:Diagram = new Diagram('Test Diagram');
     diagram.moveTopicDown(1); // move down 2nd topic
-    expect(diagram.topics[1].name).toEqual('Topic 3');
-    expect(diagram.topics[2].name).toEqual('Topic 2');
+    expect(diagram.topics[1].name).toEqual('Domain Expertise'); // topic 3
+    expect(diagram.topics[2].name).toEqual('Math & Stats'); // topic 2
   }));
 
   it('one can rename a diagram Topic', async(() => {
