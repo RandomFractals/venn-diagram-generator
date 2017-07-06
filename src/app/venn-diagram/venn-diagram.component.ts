@@ -12,7 +12,7 @@ import {Topic} from '../models/topic';
 export class VennDiagramComponent implements OnInit {
 
   // Venn diagram data model instance
-  diagram: Diagram = new Diagram('Test');
+  diagram: Diagram = new Diagram('Data Science');
 
   // Venn diagram svg
   svg = null;

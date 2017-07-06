@@ -13,7 +13,7 @@ import {Topic} from '../models/topic';
 export class TopicListComponent implements OnInit {
 
   // Venn diagram data model instance
-  diagram: Diagram = new Diagram('My');
+  diagram: Diagram = new Diagram('Data Science');
 
   // selected topic for editing
   selectedTopicIndex: number = -1;
