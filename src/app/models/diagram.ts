@@ -9,8 +9,9 @@ export class Diagram {
 
   topics: Array<Topic> = new Array<Topic>();
 
-  // starter stroke and fill color palette for topics
-  colorPalette = [
+  // starter stroke and fill color palettes
+  // for topics and diagram nodes SVG elements renders
+  strokeColorPalette = [
     '#a6cee3',
     '#1f78b4',
     '#b2df8a',
@@ -24,6 +25,16 @@ export class Diagram {
     '#ffff99',
     '#b15928',
   ];
+
+  fillColorPalette = [
+    '#a6cee3',
+    '#b2df8a',
+    '#fb9a99',
+    '#fdbf6f',
+    '#a6e3d4',
+    '#ffff99',
+  ];
+
 
   /**
    * Creates new diagram view model instance.
@@ -50,7 +61,9 @@ export class Diagram {
     let newTopic: Topic;
     if (topicName) {
       // create and add new topic
-      newTopic = new Topic(topicName, this.getRandomColor(), this.getRandomColor() ); // stroke, fill
+      newTopic = new Topic(topicName, 
+        this.getRandomColor(this.strokeColorPalette),
+        this.getRandomColor(this.fillColorPalette) );
       this.topics.push(newTopic);
     }
     return newTopic;
@@ -97,11 +110,11 @@ export class Diagram {
   }
 
   /**
-   * Gets a random color from configured color palette
+   * Gets a random color from configured color palettes
    * for diagrom topic stroke and fill color display.
    */
-  private getRandomColor(): string {
-    return this.colorPalette[Math.round(Math.random() * 12)];
+  private getRandomColor(colorPalette: Array<string>): string {
+    return colorPalette[Math.round(Math.random() * colorPalette.length)];
   }
 
 }
