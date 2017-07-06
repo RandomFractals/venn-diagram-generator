@@ -43,10 +43,9 @@ export class TopicListComponent implements OnInit {
 
     // hide last selected topic editor
     this.showTopicEditor(this.selectedTopicIndex, false);
-
     console.log('TopicList::editTopic:', topicIndex);
 
-    // show new topic editor
+    // show selected topic editor
     this.selectedTopicIndex = topicIndex;
     this.showTopicEditor(this.selectedTopicIndex, true);
   }
@@ -62,8 +61,8 @@ export class TopicListComponent implements OnInit {
     if (topicIndex >= 0 && topicIndex < this.diagram.topics.length) {
       if (show) {
         document.querySelector(`#topic-label-${topicIndex}`).className = 'hidden';
-        document.querySelector(`#topic-editor-${topicIndex}`).className = 'show';
-        document.querySelector(`#topic-toggles-${topicIndex}`).className = 'show';
+        document.querySelector(`#topic-editor-${topicIndex}`).className = 'topic-editor show';
+        document.querySelector(`#topic-toggles-${topicIndex}`).className = 'topic-toggles show';
       } else { // hide
         document.querySelector(`#topic-label-${topicIndex}`).className = 'show';
         document.querySelector(`#topic-editor-${topicIndex}`).className = 'hidden';
