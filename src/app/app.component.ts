@@ -15,7 +15,7 @@ import {VennDiagramComponent} from './venn-diagram/venn-diagram.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
   // Venn diagram data model instance
   diagram: Diagram = new Diagram('Data Science');
