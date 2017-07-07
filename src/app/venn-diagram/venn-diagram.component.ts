@@ -48,7 +48,7 @@ export class VennDiagramComponent implements OnInit {
    */
   updateSegments(diagram: Diagram) {
     console.log(`VennDiagram::updateSegments: updating ${diagram.name} svg view`);
-    // TODO
+    // TODO: loop through diagram topics and create svg view segments for display
   }
 
 

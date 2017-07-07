@@ -21,7 +21,7 @@ export class TopicListComponent implements OnInit {
   private onDiagramChange = new EventEmitter();
 
   // selected topic index for editing
-  private _selectedTopicIndex: number = -1;
+  selectedTopicIndex: number = -1;
 
   /**
    * Creates new topic list for Venn diagram editing.
@@ -84,12 +84,12 @@ export class TopicListComponent implements OnInit {
   editTopic(topicIndex: number)  {
 
     // hide last selected topic editor
-    this.showTopicEditor(this._selectedTopicIndex, false);
+    this.showTopicEditor(this.selectedTopicIndex, false);
     console.log('TopicList::editTopic:', topicIndex);
 
     // show selected topic editor
-    this._selectedTopicIndex = topicIndex;
-    this.showTopicEditor(this._selectedTopicIndex, true);
+    this.selectedTopicIndex = topicIndex;
+    this.showTopicEditor(this.selectedTopicIndex, true);
   }
 
 

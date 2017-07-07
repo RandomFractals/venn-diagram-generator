@@ -4,10 +4,10 @@
 export class Topic {
 
   /**
-   * Creates new topic view model instance with name, 
+   * Creates new topic view model instance with name,
    * stroke and fill color properties
    * for a topical diagram display.
-   * 
+   *
    * @param name Topic name.
    * @param strokeColor Topic shape stroke color.
    * @param fillColor Topic shape fill color.
