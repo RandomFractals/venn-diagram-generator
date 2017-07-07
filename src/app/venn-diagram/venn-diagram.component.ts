@@ -80,11 +80,11 @@ export class VennDiagramComponent implements OnInit {
 
     const fileName = `${this.diagram.name}-VennDiagram.png`;
     console.log(`VennDiagram::saveAsPng: ${fileName}`);
-    console.log(this.svg.viewBox.baseVal); //getBBox());
+    console.log(this.svg.viewBox.baseVal); // .getBBox());
 
     // create canvas for generating image data
     const canvas = document.createElement('canvas');
-    const bbox = this.svg.viewBox.baseVal; //.getBBox();
+    const bbox = this.svg.viewBox.baseVal; // .getBBox();
     canvas.width = bbox.width;
     canvas.height = bbox.height;
     const canvasContext = canvas.getContext('2d');
@@ -116,7 +116,7 @@ export class VennDiagramComponent implements OnInit {
             .replace('image/png', 'image/octet-stream');
         download(imageDataUrl, fileName);
       }
-      //document.removeChild(canvas);
+      // document.removeChild(canvas);
     };
 
     // trigger svg image load
