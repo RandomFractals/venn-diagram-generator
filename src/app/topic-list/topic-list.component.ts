@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 // import model classes
 import {Diagram} from '../models/diagram';
@@ -13,6 +13,7 @@ import {Topic} from '../models/topic';
 export class TopicListComponent implements OnInit {
 
   // Venn diagram data model instance
+  @Input()
   diagram: Diagram = new Diagram('Data Science');
 
   // selected topic for editing

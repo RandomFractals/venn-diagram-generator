@@ -14,6 +14,9 @@ import {Topic} from './models/topic';
 })
 export class AppComponent {
 
+  // Venn diagram data model instance
+  diagram: Diagram = new Diagram('Data Science');
+
   /**
    * Creates new Venn diagram designer app instance.
    */

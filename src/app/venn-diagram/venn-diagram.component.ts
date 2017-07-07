@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, Input, OnInit, NgZone } from '@angular/core';
 
 // import model classes
 import {Diagram} from '../models/diagram';
@@ -12,6 +12,7 @@ import {Topic} from '../models/topic';
 export class VennDiagramComponent implements OnInit {
 
   // Venn diagram data model instance
+  @Input()
   diagram: Diagram = new Diagram('Data Science');
 
   // Venn diagram svg
