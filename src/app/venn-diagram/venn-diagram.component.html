@@ -1,4 +1,11 @@
 <main id="diagram-view" class="main-content diagram">
+  <ul class="data-list">
+    <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" 
+      [style.background-color]="topic.fillColor"
+      [style.border-color]="topic.strokeColor">
+      <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
+    </li>
+  </ul>  
   <svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg"
     xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 420 420">
