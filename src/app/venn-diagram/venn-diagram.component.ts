@@ -42,6 +42,17 @@ export class VennDiagramComponent implements OnInit {
 
 
   /**
+   * Updates actual Venn diagram segments SVG on diagram model changes.
+   *
+   * @param diagram Diagram model instance to use for SVG view update.
+   */
+  updateSegments(diagram: Diagram) {
+    console.log(`VennDiagram::updateSegments: updating ${diagram.name} svg view`);
+    // TODO
+  }
+
+
+  /**
    * Exports current diagram view SVG via blob data download link trick.
    */
   exportSvg() {

@@ -1,7 +1,5 @@
 <app-header class="app-header"></app-header>
-<venn-diagram class="main-content" 
-  [diagram]="diagram"></venn-diagram>
-<topic-list class="side-bar" 
-  [diagram]="diagram"
+<venn-diagram #vennDiagram class="main-content" [diagram]="diagram"></venn-diagram>
+<topic-list class="side-bar" [diagram]="diagram"
   (onDiagramChange)="onDiagramChange($event)"></topic-list>
 <app-footer class="app-footer"></app-footer>  
