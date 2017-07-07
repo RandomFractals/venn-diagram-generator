@@ -21,6 +21,17 @@ export class AppComponent {
    * Creates new Venn diagram designer app instance.
    */
   constructor() {
+    // TODO: load prior diagram from local storage in v2?
+  }
 
+
+  /**
+   * Diagram change app event handler.
+   *
+   * @param diagram Changed diagram instance.
+   */
+  onDiagramChange(diagram: Diagram) {
+    console.log(`App::onDiagramChange: ${diagram.name} diagram changed`);
+    // TODO: save it in local storage in v2?
   }
 }

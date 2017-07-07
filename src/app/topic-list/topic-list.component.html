@@ -30,11 +30,11 @@
         <div class="topic-editor hidden" [attr.id]="'topic-editor-' + i">
           <input placeholder="Enter Topic Name" [attr.id]="'topic-name-' + i" [attr.value]="topic.name">
           <button (click)="showTopicEditor(i, false);" class="green-button">&#10003;</button>
-          <button (click)="diagram.removeTopic(i)" class="red-button">&#10007;</button>
+          <button (click)="removeTopic(i)" class="red-button">&#10007;</button>
         </div>
         <div class="topic-toggles hidden" [attr.id]="'topic-toggles-' + i">
-          <button (click)="diagram.moveTopicUp(i)">&uarr;</button>
-          <button (click)="diagram.moveTopicDown(i)">&darr;</button>
+          <button (click)="moveTopicUp(i)">&uarr;</button>
+          <button (click)="moveTopicDown(i)">&darr;</button>
           <span class="label">stroke:</span>
           <div class="color-box stroke-color-box" 
             [style.border-color]="topic.strokeColor"></div>

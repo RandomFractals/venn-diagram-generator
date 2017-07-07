@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 // import model classes
 import {Diagram} from '../models/diagram';
@@ -16,9 +16,16 @@ export class TopicListComponent implements OnInit {
   @Input()
   diagram: Diagram = new Diagram('Data Science');
 
-  // selected topic for editing
-  selectedTopicIndex: number = -1;
+  // diagram change event emitter
+  @Output()
+  private onDiagramChange = new EventEmitter();
 
+  // selected topic index for editing
+  private _selectedTopicIndex: number = -1;
+
+  /**
+   * Creates new topic list for Venn diagram editing.
+   */
   constructor() { }
 
   ngOnInit() {
@@ -32,6 +39,40 @@ export class TopicListComponent implements OnInit {
    */
   addTopic(topicName: string) {
     this.diagram.addTopic(topicName);
+    this.onDiagramChange.emit(this.diagram);
+  }
+
+
+  /**
+   * Removes specified topic from the topic list.
+   *
+   * @param topicIndex Index of the topic to remove.
+   */
+  removeTopic(topicIndex: number) {
+    this.diagram.removeTopic(topicIndex);
+    this.onDiagramChange.emit(this.diagram);
+  }
+
+
+  /**
+   * Moves specified topic up the topic list.
+   *
+   * @param topicIndex Index of the topic to move up.
+   */
+  moveTopicUp(topicIndex: number) {
+    this.diagram.moveTopicUp(topicIndex);
+    this.onDiagramChange.emit(this.diagram);
+  }
+
+
+  /**
+   * Moves specified topic down the topic list.
+   *
+   * @param topicIndex Index of the topic to move down.
+   */
+  moveTopicDown(topicIndex: number) {
+    this.diagram.moveTopicDown(topicIndex);
+    this.onDiagramChange.emit(this.diagram);
   }
 
 
@@ -43,12 +84,12 @@ export class TopicListComponent implements OnInit {
   editTopic(topicIndex: number)  {
 
     // hide last selected topic editor
-    this.showTopicEditor(this.selectedTopicIndex, false);
+    this.showTopicEditor(this._selectedTopicIndex, false);
     console.log('TopicList::editTopic:', topicIndex);
 
     // show selected topic editor
-    this.selectedTopicIndex = topicIndex;
-    this.showTopicEditor(this.selectedTopicIndex, true);
+    this._selectedTopicIndex = topicIndex;
+    this.showTopicEditor(this._selectedTopicIndex, true);
   }
 
 
