@@ -154,7 +154,19 @@ Run `ng set --global packageManager=yarn` to use Yarn package manager
 
 ## References
 
-How to deploy Angular 4 web app with Express to heroku:
+A bunch of good tech reads I've used for building this app.
+
+### Angular 4
+
+- Good writeup on #angular 4 comps comms via Input/Output, beyond simple string msg passing example :) 
+
+https://www.infoq.com/articles/angular-component-communication
+
+- For a more robust solution via RJXS Observable Service see: 
+
+http://mean.expert/2016/05/21/angular-2-component-communication/
+
+- How to deploy Angular 4 web app with Express to heroku:
 
 https://medium.com/@ervib/deploy-angular-4-app-with-express-to-heroku-6113146915ca
 
