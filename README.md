@@ -105,7 +105,7 @@ Blank app canvas for that Venn D SVG render:)
 
 7-6-2017: Latest with funky colors and some app UI tips on heroku: https://venn-diagrams.herokuapp.com/
 
-![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png | width=50%)
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png){:height="50%" width="50%"}
 
 # App Build/Run Instructions
 
