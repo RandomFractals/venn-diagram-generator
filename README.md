@@ -182,6 +182,10 @@ http://bl.ocks.org/Rokotyan/0556f8facbaf344507cdc45dc3622177
 
 ### Venn Diagrams Links
 
+- Exact and Approximate Area-proportinal Circular Venn and Euler Diagrams whitepaper:
+
+https://www.cs.uic.edu/~wilkinson/Publications/venneuler.pdf
+
 - All you can eat DataScience VennDiagrams on Bing for this proj. research reference:
 
 https://www.bing.com/images/search?q=data+science+venn+diagram&FORM=IGRE
