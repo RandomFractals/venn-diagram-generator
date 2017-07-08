@@ -18,6 +18,11 @@ export class VennDiagramComponent implements OnInit {
   // Venn diagram svg
   svg = null;
 
+  // minimum width/height svg view port size
+  minSize = 300;
+
+  margin = {top: 30, right: 10, bottom: 10, left: 10};
+
   /**
    * Creates new instance of Venn Diagram component.
    * @param ngZone NgZone for scaling diagram svg on app window resize.
