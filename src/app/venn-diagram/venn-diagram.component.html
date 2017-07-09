@@ -2,7 +2,9 @@
   <svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 540 540">
-    <text x="50%" y="20" text-anchor="middle">{{diagram.name}} Venn Diagram</text>
+    <!-- diagram title -->
+    <text x="50%" y="20" font-size="18"
+      text-anchor="middle">{{diagram.name}} Venn Diagram</text>
     <!-- segments svg -->
     <g id="segments-group">
       <!-- main diagram circle
@@ -29,7 +31,7 @@
     <!-- segment labels svg -->
     <g id="segment-labels-group">
       <!-- main diagram topic label -->
-      <text x="50%" y="50%" font-size="16"
+      <text x="50%" y="50%" font-size="18"
         text-anchor="middle">{{diagram.name}}</text>
       <g *ngFor="let topic of diagram.topics; let i=index;" 
         [attr.data-index]="i"
