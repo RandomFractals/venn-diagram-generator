@@ -1,19 +1,30 @@
 <main id="diagram-view" class="main-content diagram">
-  <!-- TODO: convert this to svg ellipses for svg view diagram segments update
-  <ul class="data-list">
-    <li *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i" 
-      [style.background-color]="topic.fillColor"
-      [style.border-color]="topic.strokeColor">
-      <span [attr.id]="'topic-label-' + i">{{ topic.name }}</span>
-    </li>
-  </ul>  
-  -->
   <svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 540 540">
     <text x="50%" y="20" text-anchor="middle">{{diagram.name}} Venn Diagram</text>
-    <text x="50%" y="40" text-anchor="middle">[todo]</text>
-
+    <!-- main diagram circle -->
+    <g id="main-circle"> <!--transform="translate(250,250)"-->
+      <circle cx="50%" cy="50%" r="60"
+        style="fill: #ffffb3; stroke: black; stroke-width: 2;"></circle>
+      <text x="50%" y="50%" text-anchor="middle">{{diagram.name}}</text>
+    </g>
+    <!-- segments svg -->
+    <g id="segments-group">
+      <g *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i"
+        [attr.id]="'segment-group-' + i">
+        <ellipse [attr.id]="'segment' + i"
+          [attr.cx]="topic.cx" [attr.cy]="topic.cy"
+          [attr.rx]="topic.rx" [attr.ry]="topic.ry"
+          [style.fill]="topic.fillColor"
+          [style.stroke]="topic.strokeColor"
+          [style.stroke-width]="2">
+        </ellipse>
+        <text [attr.id]="'segment-label-' + i"
+          [attr.x]="topic.cx" [attr.y]="topic.cy"
+          text-anchor="middle">{{topic.name}}</text>
+      </g>
+    </g>  
     <!-- created by app link group -->
     <g id="created-by-group">
       <text x="10" y="530" font-size="10">created by: </text>

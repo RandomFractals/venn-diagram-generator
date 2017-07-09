@@ -18,9 +18,10 @@ export class VennDiagramComponent implements OnInit {
   // Venn diagram svg
   svg = null;
 
-  // minimum width/height svg view port size
+  // svg view setttings
+  width = 540;
+  height = 540;
   minSize = 300;
-
   margin = {top: 30, right: 10, bottom: 10, left: 10};
 
   /**
