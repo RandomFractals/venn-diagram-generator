@@ -11,17 +11,23 @@
     </g>
     <!-- segments svg -->
     <g id="segments-group">
-      <g *ngFor="let topic of diagram.topics; let i=index;" [attr.data-index]="i"
+      <g *ngFor="let topic of diagram.topics; let i=index;" 
+        [attr.data-index]="i"
         [attr.id]="'segment-group-' + i">
-        <ellipse [attr.id]="'segment' + i"
-          [attr.cx]="topic.cx" [attr.cy]="topic.cy"
-          [attr.rx]="topic.rx" [attr.ry]="topic.ry"
+        <ellipse 
+          [attr.id]="'segment-' + i"
+          [attr.cx]="topic.cx" 
+          [attr.cy]="topic.cy"
+          [attr.rx]="topic.rx" 
+          [attr.ry]="topic.ry"
           [style.fill]="topic.fillColor"
           [style.stroke]="topic.strokeColor"
           [style.stroke-width]="2">
         </ellipse>
-        <text [attr.id]="'segment-label-' + i"
-          [attr.x]="topic.cx" [attr.y]="topic.cy"
+        <text 
+          [attr.id]="'segment-label-' + i"
+          [attr.x]="topic.cx" 
+          [attr.y]="topic.cy"
           text-anchor="middle">{{topic.name}}</text>
       </g>
     </g>  
