@@ -3,7 +3,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 540 540">
     <!-- diagram title -->
-    <text x="50%" y="20" font-size="18"
+    <text id="svg-diagram-title" 
+      x="50%" y="20" 
+      font-size="22" 
+      font-weight="bold"
       text-anchor="middle">{{diagram.name}} Venn Diagram</text>
     <!-- segments svg -->
     <g id="segments-group">
@@ -31,7 +34,10 @@
     <!-- segment labels svg -->
     <g id="segment-labels-group">
       <!-- main diagram topic label -->
-      <text x="50%" y="50%" font-size="18"
+      <text id="intersection-label" 
+        x="50%" y="50%" 
+        font-size="18" 
+        font-weight="bold"
         text-anchor="middle">{{diagram.name}}</text>
       <g *ngFor="let topic of diagram.topics; let i=index;" 
         [attr.data-index]="i"
