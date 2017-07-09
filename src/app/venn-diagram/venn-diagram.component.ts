@@ -23,7 +23,7 @@ export class VennDiagramComponent implements OnInit {
   height = 540;
   minSize = 300;
   margin = {top: 30, right: 10, bottom: 10, left: 10};
-  radius = 80; // main circle radius
+  radius = 100; // main circle radius
 
   /**
    * Creates new instance of Venn Diagram component.
@@ -66,8 +66,8 @@ export class VennDiagramComponent implements OnInit {
       topic.cy = (this.radius * Math.sin(angle)) + (this.width / 2);
 
       // adjust segment radius for diagram intersection overlap
-      topic.rx = this.radius + 20;
-      topic.ry = this.radius + 20;
+      topic.rx = this.radius + 40;
+      topic.ry = this.radius + 40;
     }
   }
 
