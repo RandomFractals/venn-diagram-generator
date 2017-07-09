@@ -23,6 +23,7 @@ export class VennDiagramComponent implements OnInit {
   height = 540;
   minSize = 300;
   margin = {top: 30, right: 10, bottom: 10, left: 10};
+  radius = 80; // main circle radius
 
   /**
    * Creates new instance of Venn Diagram component.
@@ -54,7 +55,20 @@ export class VennDiagramComponent implements OnInit {
    */
   updateSegments(diagram: Diagram) {
     console.log(`VennDiagram::updateSegments: updating ${diagram.name} svg view`);
-    // TODO: loop through diagram topics and create svg view segments for display
+    // loop through diagram topics and create svg view segments for display
+    for (let i=0; i < diagram.topics.length; i++) {
+      // calculate segment element placement angle
+      // note: for semi-circle use (i/topics.length)
+      let angle: number = (i / (diagram.topics.length / 2)) * Math.PI;
+      // calculate x and y position of the segment element
+      let topic: Topic = diagram.topics[i];
+      topic.cx = (this.radius * Math.cos(angle)) + (this.width / 2);
+      topic.cy = (this.radius * Math.sin(angle)) + (this.width / 2);
+
+      // adjust segment radius for diagram intersection overlap
+      topic.rx = this.radius + 20;
+      topic.ry = this.radius + 20;
+    }
   }
 
 
