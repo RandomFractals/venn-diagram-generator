@@ -38,8 +38,9 @@
         [attr.id]="'segment-label-group-' + i">
         <text 
           [attr.id]="'segment-label-' + i"
-          [attr.x]="topic.cx" 
-          [attr.y]="topic.cy"
+          [attr.x]="topic.textX" 
+          [attr.y]="topic.textY"
+          font-size="16"
           text-anchor="middle">{{topic.name}}</text>
       </g>
     </g>  

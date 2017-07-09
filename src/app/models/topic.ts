@@ -3,11 +3,14 @@
  */
 export class Topic {
 
-  // topic svg ellipse position and radius view model properties
+  // topic svg text labels and ellipse 
+  // position and radius view model properties
+  textX = 250;
+  textY = 250;
   cx = 250;
   cy = 250;
-  rx = 60;
-  ry = 60;
+  rx = 100;
+  ry = 100;
 
   /**
    * Creates new topic view model instance with name,
