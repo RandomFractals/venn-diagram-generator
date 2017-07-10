@@ -96,6 +96,8 @@ export class VennDiagramComponent implements OnInit {
           break;
         case 'random':
           // random placement, sizing, and rotation just for fun
+          topic.cx = this.radius/2 + (Math.random() * (this.width - this.radius - 40));
+          topic.cy = this.radius/2 + (Math.random() * (this.width - this.radius - 40));
           topic.rx = this.radius - (Math.random() * 40);
           topic.ry = this.radius - (Math.random() * (this.radius / 4 * 3));
           topic.rotateAngle = (Math.random() * 180);
