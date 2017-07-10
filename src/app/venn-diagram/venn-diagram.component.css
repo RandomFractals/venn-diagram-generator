@@ -1,6 +1,7 @@
 
 /* Venn Diagram view styles */
 .diagram {
+  height: 600px;
   padding: 10px;
 }
 
