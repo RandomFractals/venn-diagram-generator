@@ -46,6 +46,7 @@
           [attr.id]="'segment-label-' + i"
           [attr.x]="topic.textX" 
           [attr.y]="topic.textY"
+          [attr.transform]="'rotate(' + topic.rotateAngle + ' ' + topic.textX + ' ' + topic.textY + ')'"
           font-size="16"
           text-anchor="middle">{{topic.name}}</text>
       </g>

@@ -11,6 +11,7 @@ export class Topic {
   cy = 250;
   rx = 100;
   ry = 100;
+  rotateAngle = 0;
 
   /**
    * Creates new topic view model instance with name,
