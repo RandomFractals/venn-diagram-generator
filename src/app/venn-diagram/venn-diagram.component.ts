@@ -96,6 +96,8 @@ export class VennDiagramComponent implements OnInit {
           break;
         default: // circles
           topic.ry = this.radius + 40;
+          topic.rotateAngle = 0;
+          break;
       }
 
     } // end of for loop
