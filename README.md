@@ -2,9 +2,12 @@
 
 we do it for #dataSci tech lulz :)
 
-# future home of Venn Diagrams Designer
+# Venn Diagrams generator MVP demo on the web:
 
 https://venn-diagrams.herokuapp.com/
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramGeneratorMVP.png)
+
 
 # basic Venn Diagram Designer UX Sketch Idea
 
@@ -48,7 +51,7 @@ http://www.kdnuggets.com/2017/04/42-vs-big-data-data-science.html
 
 # Side Project Goal
 
-Demonstrate Angular 4, d3 v4, and custom Material UI CSS mini-app setup best practices from start to finish with micro commits in a few days or so.
+Demonstrate custom Angular 4, SVG, and Material UI CSS mini-app setup best practices from start to finish with micro commits in a few days or so.
 
 # App Dev Status
 
@@ -88,7 +91,7 @@ One must have tests! for good karma and all :)
 ## day 5 of dev
 - &#10003; deploy to https://venn-diagrams.herokuapp.com for topic list test on mobile and UI layout preview
 - &#10003; switch to this 2 cols layout for mobile: https://codepen.io/mor10/pen/QvmLpd
-- TODO: stub out the actual Venn diagram SVG view component to render diagram topics. 
+- &#10003; stub out the actual Venn diagram SVG view component to render diagram topics. 
   Use this code block: http://bl.ocks.org/bycoffe/3404776
 
 Latest with Augury:
@@ -99,13 +102,13 @@ Blank app canvas for that Venn D SVG render:)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDBlankCanvas.png)
 
-7-5-2017: Still lots todo :)
+## 7-5-2017: Still lots todo :)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramsGenAppMVPTodo.jpg)
 
-7-6-2017: Latest with funky colors and some app UI tips on heroku: https://venn-diagrams.herokuapp.com/
+## 7-6-2017: Latest with funky colors and some app UI tips on heroku: https://venn-diagrams.herokuapp.com/
 
-![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png){:height="50%" width="50%"}
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png)
 
 # App Build/Run Instructions
 
@@ -154,7 +157,7 @@ Run `ng set --global packageManager=yarn` to use Yarn package manager
 
 ## References
 
-A bunch of good tech reads I've used for building this app.
+A bunch of good tech reads I used for building this mini-app.
 
 ### Angular 4
 
