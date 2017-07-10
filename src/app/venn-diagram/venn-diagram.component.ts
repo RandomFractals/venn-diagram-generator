@@ -57,13 +57,13 @@ export class VennDiagramComponent implements OnInit {
     console.log(`VennDiagram::updateSegments: updating ${diagram.name} svg view`);
 
     // loop through diagram topics and create svg view segments for display
-    for (let i=0; i < diagram.topics.length; i++) {
+    for (let i = 0; i < diagram.topics.length; i++) {
       // calculate segment element placement angle
       // note: for semi-circle use (i/topics.length)
-      let angle: number = (i / (diagram.topics.length / 2)) * Math.PI;
+      const angle: number = (i / (diagram.topics.length / 2)) * Math.PI - Math.PI / 2; // start at 90
 
       // calculate x and y position of the segment element
-      let topic: Topic = diagram.topics[i];
+      const topic: Topic = diagram.topics[i];
       topic.cx = (this.radius * Math.cos(angle)) + (this.width / 2);
       topic.cy = (this.radius * Math.sin(angle)) + (this.width / 2);
 
