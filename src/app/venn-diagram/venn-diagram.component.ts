@@ -100,7 +100,7 @@ export class VennDiagramComponent implements OnInit {
           topic.cy = this.radius/2 + (Math.random() * (this.width - this.radius - 40));
           topic.rx = this.radius - (Math.random() * 40);
           topic.ry = this.radius - (Math.random() * (this.radius / 4 * 3));
-          topic.rotateAngle = (Math.random() * 180);
+          topic.rotateAngle = (i % 4) * 45 - 90; // 0 to 180 in 45 increments
           topic.textX = topic.cx;
           topic.textY = topic.cy;
           break;
