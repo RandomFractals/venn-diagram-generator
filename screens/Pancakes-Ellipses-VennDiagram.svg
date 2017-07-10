@@ -1,0 +1,52 @@
+<svg _ngcontent-c2="" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" id="svg" viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
+    
+    <text _ngcontent-c2="" font-size="22" font-weight="bold" id="svg-diagram-title" text-anchor="middle" x="50%" y="20">Pancakes Venn Diagram</text>
+    
+    <g _ngcontent-c2="" id="segments-group">
+      
+      <!----><g _ngcontent-c2="" data-index="0" id="segment-group-0">
+        <ellipse _ngcontent-c2="" id="segment-0" cx="270" cy="170" rx="140" ry="60" transform="rotate(-90 270 170)" style="fill: rgb(253, 191, 111); fill-opacity: 0.6; stroke: rgb(178, 223, 138); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="1" id="segment-group-1">
+        <ellipse _ngcontent-c2="" id="segment-1" cx="356.60254037844385" cy="220" rx="140" ry="60" transform="rotate(-30 356.60254037844385 220)" style="fill: rgb(166, 227, 212); fill-opacity: 0.6; stroke: rgb(251, 154, 153); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="2" id="segment-group-2">
+        <ellipse _ngcontent-c2="" id="segment-2" cx="356.6025403784439" cy="320" rx="140" ry="60" transform="rotate(30 356.6025403784439 320)" style="fill: rgb(255, 255, 153); fill-opacity: 0.6; stroke: rgb(251, 154, 153); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="3" id="segment-group-3">
+        <ellipse _ngcontent-c2="" id="segment-3" cx="270" cy="370" rx="140" ry="60" transform="rotate(90 270 370)" style="fill: rgb(166, 206, 227); fill-opacity: 0.6; stroke: rgb(202, 178, 214); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="4" id="segment-group-4">
+        <ellipse _ngcontent-c2="" id="segment-4" cx="183.39745962155615" cy="320.00000000000006" rx="140" ry="60" transform="rotate(150 183.39745962155615 320.00000000000006)" style="fill: rgb(178, 223, 138); fill-opacity: 0.6; stroke: rgb(227, 26, 28); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="5" id="segment-group-5">
+        <ellipse _ngcontent-c2="" id="segment-5" cx="183.39745962155615" cy="220" rx="140" ry="60" transform="rotate(30 183.39745962155615 220)" style="fill: rgb(251, 154, 153); fill-opacity: 0.6; stroke-width: 2;">
+        </ellipse>
+      </g>
+    </g>  
+    
+    <g _ngcontent-c2="" id="segment-labels-group">
+      
+      <text _ngcontent-c2="" font-size="18" font-weight="bold" id="intersection-label" text-anchor="middle" x="50%" y="50%">Pancakes</text>
+      <!----><g _ngcontent-c2="" data-index="0" id="segment-label-group-0">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-0" x="270" y="100" transform="rotate(-90 270 100)">eggs</text>
+      </g><g _ngcontent-c2="" data-index="1" id="segment-label-group-1">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-1" x="417.22431864335454" y="185" transform="rotate(-30 417.22431864335454 185)">veggie oil</text>
+      </g><g _ngcontent-c2="" data-index="2" id="segment-label-group-2">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-2" x="417.2243186433546" y="355" transform="rotate(30 417.2243186433546 355)">flour</text>
+      </g><g _ngcontent-c2="" data-index="3" id="segment-label-group-3">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-3" x="270" y="440" transform="rotate(90 270 440)">buttermilk</text>
+      </g><g _ngcontent-c2="" data-index="4" id="segment-label-group-4">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-4" x="122.77568135664546" y="355.00000000000006" transform="rotate(150 122.77568135664546 355.00000000000006)">baking powder</text>
+      </g><g _ngcontent-c2="" data-index="5" id="segment-label-group-5">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-5" x="122.77568135664544" y="185" transform="rotate(30 122.77568135664544 185)">caster sugar</text>
+      </g>
+    </g>  
+    
+    <g _ngcontent-c2="" id="created-by-group">
+      <text _ngcontent-c2="" font-size="10" x="10" y="530">created by: </text>
+      <a _ngcontent-c2="" xlink:href="https://venn-diagrams.herokuapp.com">
+        <text _ngcontent-c2="" font-size="10" heigt="20" x="60" y="530">https://venn-diagrams.herokuapp.com</text>
+      </a>
+    </g>
+  </svg>

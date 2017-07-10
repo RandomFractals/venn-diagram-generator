@@ -110,6 +110,14 @@ Blank app canvas for that Venn D SVG render:)
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDWithFunkyColors.png)
 
+## ...
+
+## 7-10-2017: MVP Alpha v with ellipses layout and mandatory pancakes test :)
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/PancakesEllipsesVennDiagram.png)
+
+I'll add random circles/ellipses layout just for fun next.
+
 # App Build/Run Instructions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
