@@ -1,0 +1,37 @@
+<svg _ngcontent-c2="" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" id="svg" viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
+    
+    <text _ngcontent-c2="" font-size="22" font-weight="bold" id="svg-diagram-title" text-anchor="middle" x="50%" y="20">Data Science Venn Diagram</text>
+    
+    <g _ngcontent-c2="" id="segments-group">
+      
+      <!----><g _ngcontent-c2="" data-index="0" id="segment-group-0">
+        <ellipse _ngcontent-c2="" id="segment-0" cx="370" cy="270" rx="140" ry="140" style="fill: rgb(178, 223, 138); fill-opacity: 0.6; stroke: rgb(177, 89, 40); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="1" id="segment-group-1">
+        <ellipse _ngcontent-c2="" id="segment-1" cx="220.00000000000003" cy="356.6025403784439" rx="140" ry="140" style="fill: rgb(251, 154, 153); fill-opacity: 0.6; stroke: rgb(255, 255, 153); stroke-width: 2;">
+        </ellipse>
+      </g><g _ngcontent-c2="" data-index="2" id="segment-group-2">
+        <ellipse _ngcontent-c2="" id="segment-2" cx="219.99999999999994" cy="183.39745962155615" rx="140" ry="140" style="fill: rgb(166, 206, 227); fill-opacity: 0.6; stroke: rgb(255, 127, 0); stroke-width: 2;">
+        </ellipse>
+      </g>
+    </g>  
+    
+    <g _ngcontent-c2="" id="segment-labels-group">
+      
+      <text _ngcontent-c2="" font-size="18" font-weight="bold" id="intersection-label" text-anchor="middle" x="50%" y="50%">Data Science</text>
+      <!----><g _ngcontent-c2="" data-index="0" id="segment-label-group-0">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-0" x="440" y="270">Math &amp; Stats</text>
+      </g><g _ngcontent-c2="" data-index="1" id="segment-label-group-1">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-1" x="185.00000000000006" y="417.2243186433546">Domain Expertise</text>
+      </g><g _ngcontent-c2="" data-index="2" id="segment-label-group-2">
+        <text _ngcontent-c2="" font-size="16" text-anchor="middle" id="segment-label-2" x="184.99999999999994" y="122.77568135664546">Hacking Skills</text>
+      </g>
+    </g>  
+    
+    <g _ngcontent-c2="" id="created-by-group">
+      <text _ngcontent-c2="" font-size="10" x="10" y="530">created by: </text>
+      <a _ngcontent-c2="" xlink:href="https://venn-diagrams.herokuapp.com">
+        <text _ngcontent-c2="" font-size="10" heigt="20" x="60" y="530">https://venn-diagrams.herokuapp.com</text>
+      </a>
+    </g>
+  </svg>
