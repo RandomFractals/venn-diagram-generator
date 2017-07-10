@@ -24,6 +24,7 @@
           [attr.cy]="topic.cy"
           [attr.rx]="topic.rx" 
           [attr.ry]="topic.ry"
+          [attr.transform]="'rotate(' + topic.rotateAngle + ' ' + topic.cx + ' ' + topic.cy + ')'"
           [style.fill]="topic.fillColor"
           [style.fill-opacity]=".6"
           [style.stroke]="topic.strokeColor"
@@ -59,15 +60,17 @@
       </a>
     </g>
   </svg>
-  <!-- save diagram svg toolbar -->
+  <!-- diagram svg toolbar -->
   <div class="toolbar">
+    <!-- diagram layouts toolbar -->
     <div class="toolbar-left">
-      <button class="symbol-button">&#9763;</button><!--biohazard sign-->
-      <button class="symbol-button">&#9883;</button><!--atom-->
+      <button class="symbol-button" (click)="changeLayout('circles')">&#9763;</button><!--biohazard sign-->
+      <button class="symbol-button" (click)="changeLayout('ellipses')">&#9883;</button><!--atom-->
       <!-- todo: random circles and ellipses layout just for fun
-      <button class="symbol-button">&#9760;</button>
+      <button class="symbol-button" (click)="changeLayout('random')">&#9760;</button>
       -->
     </div>
+    <!-- save diagram svg toolbar -->    
     <div class="toolbar-right">
       <button id="export-svg-button" (click)="exportSvg()">Export SVG</button>
       <!-- TODO: see why this broke in last download blob refactor 

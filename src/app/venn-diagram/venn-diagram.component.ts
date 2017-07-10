@@ -18,6 +18,9 @@ export class VennDiagramComponent implements OnInit {
   // Venn diagram svg
   svg = null;
 
+  // diagram layouts: circles, ellipses, random
+  layout = 'circles'; // default
+
   // svg view setttings
   width = 540;
   height = 540;
@@ -49,6 +52,17 @@ export class VennDiagramComponent implements OnInit {
 
 
   /**
+   * Changes diagram segments shape and layout.
+   *
+   * @param layoutType Selected layout type: circles, ellipses, or random.
+   */
+  changeLayout(layoutType: string) {
+    this.layout = layoutType;
+    this.updateSegments(this.diagram);
+  }
+
+
+  /**
    * Updates actual Venn diagram segments SVG on diagram model changes.
    *
    * @param diagram Diagram model instance to use for SVG view update.
@@ -67,18 +81,26 @@ export class VennDiagramComponent implements OnInit {
       topic.cx = (this.radius * Math.cos(angle)) + (this.width / 2);
       topic.cy = (this.radius * Math.sin(angle)) + (this.width / 2);
 
-      // adjust segment radius for diagram intersection overlap
-      topic.rx = this.radius + 40;
-      topic.ry = this.radius + 40;
-
       // calculate segment text label position offset
       topic.textX = ((this.radius + 70) * Math.cos(angle)) + (this.width / 2);
       topic.textY = ((this.radius + 70) * Math.sin(angle)) + (this.width / 2);
 
-      // rotate label/ellipse angle
-      // topic.rotateAngle = (360 / diagram.topics.length * i - 90) % 180;
-    }
-  }
+      // adjust segment radius for diagram intersection overlap
+      topic.rx = this.radius + 40;
+      switch (this.layout) {
+        case 'ellipses':
+          // adjust segment Y radius
+          topic.ry = this.radius - 40;
+          // rotate label/ellipse angle
+          topic.rotateAngle = (360 / diagram.topics.length * i - 90) % 180;
+          break;
+        default: // circles
+          topic.ry = this.radius + 40;
+      }
+
+    } // end of for loop
+
+  } // end of updateSegments(diagram)
 
 
   /**
