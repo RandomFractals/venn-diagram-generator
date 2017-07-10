@@ -1,7 +1,7 @@
 
 /* Venn Diagram view styles */
 .diagram {
-  height: 600px;
+  height: 620px;
   padding: 10px;
 }
 
@@ -13,4 +13,16 @@
 .toolbar {
 	background-color: #eee;
   text-align: right;
+}
+
+.toolbar-left {
+  float: left;
+}
+
+.toolbar-right {
+  float: right;
+}
+
+.symbol-button {
+  font-size: 1.8em;
 }

@@ -61,9 +61,18 @@
   </svg>
   <!-- save diagram svg toolbar -->
   <div class="toolbar">
-    <button id="export-svg-button" (click)="exportSvg()">Export SVG</button>
-    <!-- TODO: see why this broke in last download blob refactor 
-    <button id="save-png-button" (click)="saveAsPng()">Save as PNG</button>
+    <div class="toolbar-left">
+      <button class="symbol-button">&#9763;</button><!--biohazard sign-->
+      <button class="symbol-button">&#9883;</button><!--atom-->
+      <!-- todo: random circles and ellipses layout just for fun
+      <button class="symbol-button">&#9760;</button>
+      -->
+    </div>
+    <div class="toolbar-right">
+      <button id="export-svg-button" (click)="exportSvg()">Export SVG</button>
+      <!-- TODO: see why this broke in last download blob refactor 
+      <button id="save-png-button" (click)="saveAsPng()">Save as PNG</button>
     -->
+    </div>    
   </div>  
 </main>
