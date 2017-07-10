@@ -1,10 +1,15 @@
 
 /* Venn Diagram view styles */
 .diagram {
-  height: 480px;
   padding: 10px;
 }
 
 .svg {
   border: 1px solid #999;
+}
+
+/* toolbar/button styles */
+.toolbar {
+	background-color: #eee;
+  text-align: right;
 }
