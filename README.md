@@ -8,6 +8,13 @@ https://venn-diagrams.herokuapp.com/
 
 ![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramGeneratorMVP.png)
 
+# VueJS CodePen
+
+If you are looking for a vuejs quickie of this viz, I got you! :) 
+
+See: https://codepen.io/TarasNovak/full/prZmqY
+
+![alt tag](https://github.com/RandomFractals/venn-diagram-generator/blob/master/screens/VennDiagramsVueJSPort.png)
 
 # basic Venn Diagram Designer UX Sketch Idea
 
